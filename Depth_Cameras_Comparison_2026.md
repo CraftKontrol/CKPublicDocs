@@ -13,8 +13,7 @@
 | 4 | **Azure Kinect** | 1024×1024 | **3840×2160 (4K)** | €500 | iToF | Discontinued, highest RGB 
 | 5 | **Femto Bolt/Mega** | 1024×1024 | **3840×2160 (4K)** | €300-450 | iToF | Azure compatible, 4K RGB ||
 | 6 | **OAK-D Pro** | 1280×800 | **12MP (4K)** | $399 | Stereo Vision | 48 TOPS AI, laser dot |
-| 7 | **Intel D435i** | 1280×720 | 1920×1080 | €468 | Stereo Vision | Wide FOV, proven |
-| 8 | **Photoneo PhoXi 3D** | 1680×1200 | - | €5,000+ | Structured Light | Industrial scanning |
+| 7 | **Photoneo PhoXi 3D** | 1680×1200 | - | €5,000+ | Structured Light | Industrial scanning |
 | 9 | **Zivid Two M130** | 1944×1200 | - | €10,000+ | Structured Light | Professional 3D scanning |
 
 ### Best Connectivity
@@ -32,7 +31,6 @@
 | **Dual** | **Femto Mega I** | €400-500 | USB 3.0 + GigE PoE, enhanced | 0.4-5.5m | iToF | Azure compatible |
 | **GMSL** | **Intel D457** | €690 | GMSL/FAKRA, IP65, automotive | 0.4-6m | Stereo Vision | Automotive certified |
 | **GMSL2** | **ZED X** | €750 | GMSL2 or USB 3.1, 120fps | 0.5-20m | Stereo Vision | Highest FPS option |
-| **GigE** | **Basler blaze-101** | €1,000-1,500 | GigE or USB 3.0, compact | 0.3-10m | iToF | Industrial ToF |
 | **GigE** | **Lucid Helios2** | €1,500-3,000 | GigE, 1456×1088 depth | 0.3-10m | iToF | High resolution industrial |
 | **Ethernet** | **Livox Mid-360** | €500-600 | 360° horizontal, 100K pts/sec | 0.5-40m | LiDAR | Outdoor mapping |
 | **Ethernet** | **Ouster OS0/OS1** | €3,000-15k | 2048 beams, 10/20Hz | 0.5-50m | LiDAR | Professional automotive |
@@ -44,7 +42,7 @@
 | SDK | Manufacturer | Languages | Platforms | Key Features | Best Models | Downloads/Community |
 |-----|--------------|-----------|-----------|--------------|-------------|---------------------|
 | **DepthAI** | Luxonis (OAK) | Python, C++ | Win/Linux/macOS/ARM | **48-52 TOPS AI**, onboard inference, PyTorch/TF/ONNX, ROS/ROS2, custom pipelines | OAK-D Pro, OAK-4 (52 TOPS), OAK-D W PoE, OAK-D Lite | **2.5M+ downloads**, open-source |
-| **RealSense 2.0** | Intel | Python, C++, C#, Node.js | Win/Linux/macOS | **Largest ecosystem**, Unity/Unreal, ROS/ROS2, best docs, proven | D455, D435i, D457, L515 | **Largest community** |
+| **RealSense 2.0** | Intel | Python, C++, C#, Node.js | Win/Linux/macOS | **Largest ecosystem**, Unity/Unreal, ROS/ROS2, best docs, proven | D455, D457, L515 | **Largest community** |
 | **ZED SDK** | Stereolabs | Python, C++, C#, Unity | Win/Linux | **Neural depth**, spatial AI, positional tracking, object/body detection, extreme conditions | ZED 2i, ZED X, ZED 2 | Strong, professional |
 | **Orbbec SDK** | Orbbec | Python, C++, C | Win/Linux | **Azure Kinect compatible**, TouchDesigner ready, multi-device sync, OpenNI | Femto Bolt/Mega, Astra 2, Gemini 2 | Growing, TD integration ✅ |
 | **Azure Kinect SDK** | Microsoft | Python, C++, C# | Win/Linux | 7-mic array, body tracking, cognitive services (discontinued) | Azure Kinect DK, Femto Bolt/Mega (compatible) | Large, maintained by Orbbec |
@@ -56,10 +54,6 @@
 
 | Model | Technology | Max Depth Resolution | Max RGB Resolution | Max FPS | Range | Connectivity | FOV (H×V) | IMU | Price (€) | Notes |
 |-------|------------|---------------------|-------------------|---------|-------|--------------|-----------|-----|-----------|-------|
-| **<a href="https://www.intel.com/content/www/us/en/products/sku/193561/intel-realsense-depth-camera-d405/specifications.html" target="_blank">D405</a>** | Stereo Vision | 1280×720 | 1280×720 | 90 fps | 0.07-0.5m | USB-C 3.1 | 87°×58° | No | €415 | Close-range, OV9782 |
-| **<a href="https://www.intel.com/content/www/us/en/products/sku/128540/intel-realsense-depth-camera-d415/specifications.html" target="_blank">D415</a>** | Stereo Vision | **1280×720** | **1920×1080** | 90 fps | 0.3-10m | USB-C 3.0 | 65°×40° | No | €372 | Narrow FOV, rolling shutter |
-| **<a href="https://www.intel.com/content/www/us/en/products/sku/128541/intel-realsense-depth-camera-d435/specifications.html" target="_blank">D435</a>** | Stereo Vision | **1280×720** | **1920×1080** | 90 fps | 0.3-10m | USB-C 3.1 | 86°×57° | No | €456 | Wide FOV, rolling shutter |
-| **<a href="https://www.intel.com/content/www/us/en/products/sku/190004/intel-realsense-depth-camera-d435i/specifications.html" target="_blank">D435i</a>** | Stereo Vision | **1280×720** | **1920×1080** | 90 fps | 0.3-3m | USB-C 3.1 | 87°×58° | Yes | €468 | D435 + 6-DoF IMU |
 | **<a href="https://www.intel.com/content/www/us/en/products/sku/201589/intel-realsense-depth-camera-d435if/specifications.html" target="_blank">D435if</a>** | Stereo Vision | **1280×720** | **1920×1080** | 90 fps | 0.3-10m | USB-C 3.1 | 86°×57° | Yes | €567 | IR pass filter + IMU |
 | **<a href="https://www.intel.com/content/www/us/en/products/sku/201590/intel-realsense-depth-camera-d455/specifications.html" target="_blank">D455</a>** | Stereo Vision | **1280×720** | **1280×720** | 90 fps | 0.4-6m | USB-C 3.1 | 86°×57° | Yes | €588 | **Global shutter, best outdoor** |
 | **<a href="https://www.intel.com/content/www/us/en/products/sku/201591/intel-realsense-depth-camera-d455f/specifications.html" target="_blank">D455f</a>** | Stereo Vision | **1280×720** | **1280×720** | 90 fps | 0.4-6m | USB-C 3.1 | 86°×57° | Yes | €612 | D455 + IR pass filter |
@@ -140,8 +134,9 @@
 
 | Brand | Model | Technology | Max Depth Resolution | Max RGB Resolution | Max FPS | Range | Connectivity | FOV | Price (€) | Notes |
 |-------|-------|------------|---------------------|-------------------|---------|-------|--------------|-----|-----------|-------|
-| **Basler** | <a href="https://www.baslerweb.com/en/products/cameras/3d-cameras/time-of-flight-camera/blaze-101/" target="_blank">blaze-101</a> | iToF | **640×480** | Optional RGB | 30 fps | 0.3-10m | **GigE / USB 3.0** | 71°×55° | €1,000-1,500 | Compact industrial |
-|Note: Replaced by Orbbec Femto Bolt/Mega with compatible SDK*
+| **Lucid** | Helios2 | iToF | **1456×1088** | Optional RGB | 30 fps | 0.3-10m | **GigE** | Various | €1,500-3,000 | High resolution industrial |
+| **Zivid** | Two M130 | Structured Light | 1944×1200 | - | Variable | 0.3-1.3m | **GigE / PoE** | 60°×45° | €10,000+ | Professional 3D scanning |
+| **Photoneo** | PhoXi 3D | Structured Light | 1680×1200 | - | Variable | 0.4-3m | **GigE** | Configurable | €5,000+ | Factory automation |
 
 ### Industrial
 
@@ -178,12 +173,13 @@
 ### Best PoE (Power over Ethernet)
 ## Best By Category
 
-**Overall Value:** OAK-D Pro ($399) • Femto Bolt (€300-400) • D435i (€468)
+**Overall Value:** OAK-D Pro ($399) • Femto Bolt (€300-400) • D455 (€588)
 **Budget:** OAK-D Lite ($150) • Astra 2 (€200-250, 1600×1200 depth!) • Gemini 2 (€200-250)
+
 ### Best Outdoor Performance
 1. **ZED 2i** - Proven at 60kmph in 45°C heat (Reddit verified)
 2. **Intel D455/D455f** - Global shutter, designed for outdoor
-3. **Intel D435i** - Wide FOV, good in varied lighting
+3. **OAK-D Pro** - 48 TOPS AI, wide FOV, proven reliable
 
 ### Best for Robotics/AMR
 **Based on Reddit Community (r/robotics):**
@@ -206,14 +202,14 @@
 
 ### Best Close-Range
 1. **Orbbec Gemini 305** - **4cm minimum** (revolutionary!)
-2. **Intel D405** - 7cm minimum
-3. **Astra Mini Pro** - 35cm minimum
+2. **Astra Mini Pro** - 35cm minimum
+3. **L515** - 25cm minimum (discontinued)
 
 ### Best Industrial
 1. **Intel D457** (€690) - GMSL/FAKRA, IP65, automotive certified
 2. **Zivid Two M130** (€10,000+) - Professional 3D scanning
-3. **Basler blaze-101** (€1,000-1,500) - Compact industrial ToF
-4. **OAK-4 Pro** ($949) - RVC4, 52 TOPS, IP67, standalone
+3. **OAK-4 Pro** ($949) - RVC4, 52 TOPS, IP67, standalone
+4. **Lucid Helios2** (€1,500-3,000) - High resolution GigE ToF
 
 ### Best for Creative/TouchDesigner
 1. **Orbbec Femto Bolt** (€300-400) - Native SDK, point cloud ready
@@ -232,7 +228,6 @@
 - **OAK-D Pro**: "Great when you need onboard AI processing"
 
 ### Avoid
-- **Intel D415 for moving robots**: "Rolling shutter causes issues on mobile platforms"
 - **Femto Bolt/Mega outdoors**: "Becomes quite bad in strong sunlight"
 - **OAK-D in low-texture environments**: "Depth can be temperamental without good features"
 
@@ -254,15 +249,17 @@ Community Notes (Reddit r/robotics)
 - **ZED X** (GMSL2 option)
 
 ### GigE (Gigabit Ethernet)
-- Basler blaze-101
 - Lucid Helios2
 - Photoneo PhoXi 3D
 - Zivid series
 **USB 2.0:** Astra+, Mini Pro, Embedded S
-**USB 3.0/3.1:** RealSense (all), OAK (all USB), Astra 2, Gemini/Femto, ZED, Azure Kinect, Basler blaze-101
+**USB 3.0/3.1:** RealSense (all), OAK (all USB), Astra 2, Gemini/Femto, ZED, Azure Kinect
 **PoE:** OAK-D Pro PoE • OAK-D W PoE • OAK-4 • Femto Mega/Mega I • Zivid • Photoneo • Industrial LiDAR
 **GMSL/GMSL2:** D457 (GMSL/FAKRA) • ZED X (GMSL2)
-**GigE:** Basler, Lucid, Photoneo, Zivid, Industrial camerasest:** Orbbec Femto Bolt (€300-400) - Fast ToF  
+**GigE:** Lucid, Photoneo, Zivid, Industrial cameras
+
+### Gesture / HMI
+**Best:** Orbbec Femto Bolt (€300-400) - Fast ToF  
 **Alternative:** OAK-D Pro ($399) - AI gestures
 
 ### Outdoor Mapping / Survey
@@ -296,12 +293,12 @@ Based on your `CKTDOrbbec` project:
 **AMR/AGV:** ZED 2i/D455 (€550-588) • Budget: OAK-D Lite ($150)/Gemini 2 (€200) • Industrial: OAK-4 ($849)
 **Outdoor:** ZED 2i (€550) • D455 (€588) • Avoid: Femto (sunlight issues)
 **Indoor Robotics:** Femto Bolt (€300-400) • OAK-D Pro ($399) • Astra 2 (€200, 1600×1200!)
-**Robotic Arms:** Gemini 305 (€300+, 4cm!) • D405 (€415, 7cm) • Zivid (€10k+, precision)
+**Robotic Arms:** Gemini 305 (€300+, 4cm!) • Zivid (€10k+, precision)
 **3D Scanning:** Zivid (€10k+) • L515 (€450+) • D455 (€588)
 **Gesture/HMI:** Femto Bolt (€300-400) • OAK-D Pro ($399)
 **Outdoor Mapping:** Ouster/Velodyne (€3k+) • ZED X (€750, 120fps) • D455 (€588)
 **Wearable/Drone:** Gemini 305 (65g) • ZED Mini (€350) • OAK-D Lite ($150)
-**Industrial:** D457 GMSL (€690) • OAK-4 (IP67, $849) • Basler (€1k) • Zivid (€10k+)
+**Industrial:** D457 GMSL (€690) • OAK-4 (IP67, $849) • Lucid Helios2 (€1.5k-3k) • Zivid (€10k+)
 **TouchDesigner:** Femto Bolt (€300-400, SDK ready!) • D455 (€588) • OAK-D Pro ($399) • ZED 2 (€450)
 
 ## Quick Decision Matrix
