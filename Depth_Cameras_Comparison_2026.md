@@ -10,12 +10,12 @@
 | 1 | **ZED 2/2i/X** | **2208×1242** | **2208×1242** | €450-750 | Stereo Vision | Highest overall, 60-120fps, spatial AI |
 | 2 | **Astra 2** | **1600×1200** | 1920×1080 | €200-250 | Structured Light | Best structured light, best value |
 | 3 | **Lucid Helios2** | **1456×1088** | - | €1,500-3k | iToF | Industrial grade |
-| 4 | **Azure Kinect** | 1024×1024 | **3840×2160 (4K)** | €500 | iToF | Discontinued, highest RGB |
-| 5 | **OAK-D Pro** | 1280×800 | **12MP (4K)** | $399 | Stereo Vision | 48 TOPS AI, laser dot |
-| 6 | **Intel D435i** | 1280×720 | 1920×1080 | €468 | Stereo Vision | Wide FOV, proven |
-| 8 | **Femto Bolt/Mega** | 1024×1024 | **3840×2160 (4K)** | €300-450 | iToF | Azure compatible, 4K RGB |
-| 9 | **Photoneo PhoXi 3D** | 1680×1200 | - | €5,000+ | Structured Light | Industrial scanning |
-| 10 | **Zivid Two M130** | 1944×1200 | - | €10,000+ | Structured Light | Professional 3D scanning |
+| 4 | **Azure Kinect** | 1024×1024 | **3840×2160 (4K)** | €500 | iToF | Discontinued, highest RGB 
+| 5 | **Femto Bolt/Mega** | 1024×1024 | **3840×2160 (4K)** | €300-450 | iToF | Azure compatible, 4K RGB ||
+| 6 | **OAK-D Pro** | 1280×800 | **12MP (4K)** | $399 | Stereo Vision | 48 TOPS AI, laser dot |
+| 7 | **Intel D435i** | 1280×720 | 1920×1080 | €468 | Stereo Vision | Wide FOV, proven |
+| 8 | **Photoneo PhoXi 3D** | 1680×1200 | - | €5,000+ | Structured Light | Industrial scanning |
+| 9 | **Zivid Two M130** | 1944×1200 | - | €10,000+ | Structured Light | Professional 3D scanning |
 
 ### Best Connectivity
 
@@ -56,30 +56,30 @@
 
 | Model | Technology | Max Depth Resolution | Max RGB Resolution | Max FPS | Range | Connectivity | FOV (H×V) | IMU | Price (€) | Notes |
 |-------|------------|---------------------|-------------------|---------|-------|--------------|-----------|-----|-----------|-------|
-| **D405** | Stereo Vision | 1280×720 | 1280×720 | 90 fps | 0.07-0.5m | USB-C 3.1 | 87°×58° | No | €415 | Close-range, OV9782 |
-| **D415** | Stereo Vision | **1280×720** | **1920×1080** | 90 fps | 0.3-10m | USB-C 3.0 | 65°×40° | No | €372 | Narrow FOV, rolling shutter |
-| **D435** | Stereo Vision | **1280×720** | **1920×1080** | 90 fps | 0.3-10m | USB-C 3.1 | 86°×57° | No | €456 | Wide FOV, rolling shutter |
-| **D435i** | Stereo Vision | **1280×720** | **1920×1080** | 90 fps | 0.3-3m | USB-C 3.1 | 87°×58° | Yes | €468 | D435 + 6-DoF IMU |
-| **D435if** | Stereo Vision | **1280×720** | **1920×1080** | 90 fps | 0.3-10m | USB-C 3.1 | 86°×57° | Yes | €567 | IR pass filter + IMU |
-| **D455** | Stereo Vision | **1280×720** | **1280×720** | 90 fps | 0.4-6m | USB-C 3.1 | 86°×57° | Yes | €588 | **Global shutter, best outdoor** |
-| **D455f** | Stereo Vision | **1280×720** | **1280×720** | 90 fps | 0.4-6m | USB-C 3.1 | 86°×57° | Yes | €612 | D455 + IR pass filter |
-| **D456** | Stereo Vision | **1280×720** | **1280×720** | 90 fps | 0.4-10m | USB-C 3.1 | 86°×57° | Yes | €678 | 3 sensors, extended range |
-| **D457** | Stereo Vision | **1280×720** | **1280×720** | 90 fps | 0.4-6m | **GMSL/FAKRA** | 86°×57° | Yes | €690 | **IP65, automotive** |
-| **L515** | LiDAR (dToF) | **1024×768** | **1920×1080** | 30 fps | 0.25-9m | USB-C 3.1 | 70°×55° | No | €450+ | ±5mm accuracy, discontinued |
+| **<a href="https://www.intel.com/content/www/us/en/products/sku/193561/intel-realsense-depth-camera-d405/specifications.html" target="_blank">D405</a>** | Stereo Vision | 1280×720 | 1280×720 | 90 fps | 0.07-0.5m | USB-C 3.1 | 87°×58° | No | €415 | Close-range, OV9782 |
+| **<a href="https://www.intel.com/content/www/us/en/products/sku/128540/intel-realsense-depth-camera-d415/specifications.html" target="_blank">D415</a>** | Stereo Vision | **1280×720** | **1920×1080** | 90 fps | 0.3-10m | USB-C 3.0 | 65°×40° | No | €372 | Narrow FOV, rolling shutter |
+| **<a href="https://www.intel.com/content/www/us/en/products/sku/128541/intel-realsense-depth-camera-d435/specifications.html" target="_blank">D435</a>** | Stereo Vision | **1280×720** | **1920×1080** | 90 fps | 0.3-10m | USB-C 3.1 | 86°×57° | No | €456 | Wide FOV, rolling shutter |
+| **<a href="https://www.intel.com/content/www/us/en/products/sku/190004/intel-realsense-depth-camera-d435i/specifications.html" target="_blank">D435i</a>** | Stereo Vision | **1280×720** | **1920×1080** | 90 fps | 0.3-3m | USB-C 3.1 | 87°×58° | Yes | €468 | D435 + 6-DoF IMU |
+| **<a href="https://www.intel.com/content/www/us/en/products/sku/201589/intel-realsense-depth-camera-d435if/specifications.html" target="_blank">D435if</a>** | Stereo Vision | **1280×720** | **1920×1080** | 90 fps | 0.3-10m | USB-C 3.1 | 86°×57° | Yes | €567 | IR pass filter + IMU |
+| **<a href="https://www.intel.com/content/www/us/en/products/sku/201590/intel-realsense-depth-camera-d455/specifications.html" target="_blank">D455</a>** | Stereo Vision | **1280×720** | **1280×720** | 90 fps | 0.4-6m | USB-C 3.1 | 86°×57° | Yes | €588 | **Global shutter, best outdoor** |
+| **<a href="https://www.intel.com/content/www/us/en/products/sku/201591/intel-realsense-depth-camera-d455f/specifications.html" target="_blank">D455f</a>** | Stereo Vision | **1280×720** | **1280×720** | 90 fps | 0.4-6m | USB-C 3.1 | 86°×57° | Yes | €612 | D455 + IR pass filter |
+| **<a href="https://www.intel.com/content/www/us/en/products/sku/231472/intel-realsense-depth-camera-d456/specifications.html" target="_blank">D456</a>** | Stereo Vision | **1280×720** | **1280×720** | 90 fps | 0.4-10m | USB-C 3.1 | 86°×57° | Yes | €678 | 3 sensors, extended range |
+| **<a href="https://www.intel.com/content/www/us/en/products/sku/231471/intel-realsense-depth-camera-d457/specifications.html" target="_blank">D457</a>** | Stereo Vision | **1280×720** | **1280×720** | 90 fps | 0.4-6m | **GMSL/FAKRA** | 86°×57° | Yes | €690 | **IP65, automotive** |
+| **<a href="https://www.intel.com/content/www/us/en/products/sku/191175/intel-realsense-lidar-camera-l515/specifications.html" target="_blank">L515</a>** | LiDAR (dToF) | **1024×768** | **1920×1080** | 30 fps | 0.25-9m | USB-C 3.1 | 70°×55° | No | €450+ | ±5mm accuracy, discontinued |
 
 ### Luxonis OAK
 
 | Model | Technology | Max Depth Resolution | Max RGB Resolution | Max FPS | Range | Connectivity | FOV (H×V) | IMU | Price ($) | Notes |
 |-------|------------|---------------------|-------------------|---------|-------|--------------|-----------|-----|-----------|-------|
-| **OAK-D Lite** | Stereo Vision | **1280×800** | **4K (3840×2160)** | 60 fps | 0.2-35m | USB-C 3.1 | 127°×80° | No | $150 | Budget, Myriad X AI |
-| **OAK-D** | Stereo Vision | **1280×800** | **4K (3840×2160)** | 60 fps | 0.2-35m | USB-C 3.1 | 127°×80° | Yes | $299 | **48 TOPS AI, onboard CV** |
-| **OAK-D Pro** | Stereo Vision | **1280×800** | **12MP (4K)** | 60 fps | 0.2-35m | USB-C 3.1 | 127°×80° | Yes | $399 | **Laser dot, night vision** |
-| **OAK-D Pro PoE** | Stereo Vision | **1280×800** | **12MP (4K)** | 60 fps | 0.2-35m | **PoE (802.3af)** | 127°×80° | Yes | $499 | **Native PoE, no USB** |
-| **OAK-D Pro W** | Stereo Vision | **1280×800** | **12MP (4K)** | 60 fps | 0.2-35m | USB-C 3.1 | **150°×110°** | Yes | $449 | **Ultra-wide FOV** |
-| **OAK-D W PoE** | Stereo Vision | **1280×800** | **12MP (IMX378)** | 60 fps | 0.4-6m | **PoE (802.3af)** | **150°×110°** | Yes | $549 | **Wide FOV, IP65, 5.5W** |
-| **OAK-D Pro W PoE** | Stereo Vision | **1280×800** | **12MP (IMX378)** | 60 fps | 0.4-6m | **PoE (802.3af)** | **150°×110°** | Yes | $649 | **IR dot + LED, IP65, 7.5W** |
-| **OAK-4** | Stereo + Multi | **1280×800** | **48MP** | 60 fps | 0.7-12m | USB-C / PoE | 127°×80° | Yes | $849 | **RVC4, 52 TOPS, IP67, Linux** |
-| **OAK-4 Pro** | Stereo + Multi | **1280×800** | **48MP** | 60 fps | 0.7-12m | USB-C / PoE | 127°×80° | Yes | $949 | **RVC4, IR dot/LED, IP67, 52 TOPS** |
+| **<a href="https://shop.luxonis.com/products/oak-d-lite" target="_blank">OAK-D Lite</a>** | Stereo Vision | **1280×800** | **4K (3840×2160)** | 60 fps | 0.2-35m | USB-C 3.1 | 127°×80° | No | $150 | Budget, Myriad X AI |
+| **<a href="https://shop.luxonis.com/products/oak-d" target="_blank">OAK-D</a>** | Stereo Vision | **1280×800** | **4K (3840×2160)** | 60 fps | 0.2-35m | USB-C 3.1 | 127°×80° | Yes | $299 | **48 TOPS AI, onboard CV** |
+| **<a href="https://shop.luxonis.com/products/oak-d-pro" target="_blank">OAK-D Pro</a>** | Stereo Vision | **1280×800** | **12MP (4K)** | 60 fps | 0.2-35m | USB-C 3.1 | 127°×80° | Yes | $399 | **Laser dot, night vision** |
+| **<a href="https://shop.luxonis.com/products/oak-d-pro-poe" target="_blank">OAK-D Pro PoE</a>** | Stereo Vision | **1280×800** | **12MP (4K)** | 60 fps | 0.2-35m | **PoE (802.3af)** | 127°×80° | Yes | $499 | **Native PoE, no USB** |
+| **<a href="https://shop.luxonis.com/products/oak-d-pro-w" target="_blank">OAK-D Pro W</a>** | Stereo Vision | **1280×800** | **12MP (4K)** | 60 fps | 0.2-35m | USB-C 3.1 | **150°×110°** | Yes | $449 | **Ultra-wide FOV** |
+| **<a href="https://shop.luxonis.com/products/oak-d-w-poe" target="_blank">OAK-D W PoE</a>** | Stereo Vision | **1280×800** | **12MP (IMX378)** | 60 fps | 0.4-6m | **PoE (802.3af)** | **150°×110°** | Yes | $549 | **Wide FOV, IP65, 5.5W** |
+| **<a href="https://shop.luxonis.com/products/oak-d-pro-w-poe" target="_blank">OAK-D Pro W PoE</a>** | Stereo Vision | **1280×800** | **12MP (IMX378)** | 60 fps | 0.4-6m | **PoE (802.3af)** | **150°×110°** | Yes | $649 | **IR dot + LED, IP65, 7.5W** |
+| **<a href="https://shop.luxonis.com/products/oak-4-d" target="_blank">OAK-4</a>** | Stereo + Multi | **1280×800** | **48MP** | 60 fps | 0.7-12m | USB-C / PoE | 127°×80° | Yes | $849 | **RVC4, 52 TOPS, IP67, Linux** |
+| **<a href="https://shop.luxonis.com/products/oak-4-d-ea" target="_blank">OAK-4 Pro</a>** | Stereo + Multi | **1280×800** | **48MP** | 60 fps | 0.7-12m | USB-C / PoE | 127°×80° | Yes | $949 | **RVC4, IR dot/LED, IP67, 52 TOPS** |
 
 **Key Features:**
 - All models include Myriad X VPU (48 TOPS AI processing)
@@ -89,7 +89,7 @@
 
 | Model | Technology | Max Depth Resolution | Max RGB Resolution | Max FPS | Range | Connectivity | FOV (H×V) | IMU | Price (€) | Notes |
 |-------|------------|---------------------|-------------------|---------|-------|--------------|-----------|-----|-----------|-------|
-| **Astra 2** | Structured Light | **1600×1200** | **1920×1080** | 30 fps | 0.6-8m | **USB 3.0 Type-C** | Depth: 58.2°×45.2° / RGB: 74.7°×46.2° | Yes | €200-250 | **Orbbec ASIC, 241g, multi-camera sync** |
+| **<a href="https://www.orbbec.com/products/structured-light-camera/astra-2/" target="_blank">Astra 2</a>** | Structured Light | **1600×1200** | **1920×1080** | 30 fps | 0.6-8m | **USB 3.0 Type-C** | Depth: 58.2°×45.2° / RGB: 74.7°×46.2° | Yes | €200-250 | **Orbbec ASIC, 241g, multi-camera sync** |
 | Astra+ | Structured Light | **640×480** | 640×480 | 30 fps | 0.6-8m | USB 2.0 | 60°×49.5° | No | €150 | Legacy, VGA RGB |
 | Astra Mini Pro | Structured Light | **640×480** | 1280×960 | 30 fps | 0.35-2.5m | USB 2.0 | 60°×49.5° | No | €200 | Compact, short range |
 | Astra Embedded S | Structured Light | **640×480** | 1280×960 | 30 fps | 0.6-8m | USB 2.0 | 60°×49.5° | No | - | Legacy, embedded |
@@ -98,8 +98,8 @@
 
 | Model | Technology | Max Depth Resolution | Max RGB Resolution | Max FPS | Range | Connectivity | FOV (H×V) | IMU | Price (€) | Notes |
 |-------|------------|---------------------|-------------------|---------|-------|--------------|-----------|-----|-----------|-------|
-| **Gemini 2** | Stereo Vision | **640×400** | **1920×1080** | 30 fps | 0.5-5m | USB 3.0 | 67°×45° | No | €200-250 | Good value |
-| **Gemini 305** | Stereo Vision | **640×400** | **1920×1080** | 30 fps | **0.04-1m** | USB 3.0 | 67°×45° | Yes | €300+ | **4cm ultra-close, 65g** |
+| **<a href="https://www.orbbec.com/products/stereo-vision-camera/gemini-2/" target="_blank">Gemini 2</a>** | Stereo Vision | **640×400** | **1920×1080** | 30 fps | 0.5-5m | USB 3.0 | 67°×45° | No | €200-250 | Good value |
+| **<a href="https://www.orbbec.com/products/stereo-vision-camera/gemini-305/" target="_blank">Gemini 305</a>** | Stereo Vision | **640×400** | **1920×1080** | 30 fps | **0.04-1m** | USB 3.0 | 67°×45° | Yes | €300+ | **4cm ultra-close, 65g** |
 | **Gemini 305g** | Stereo Vision | **640×400** | **1920×1080** | 30 fps | 0.04-1m | USB 3.0 | 67°×45° | Yes | €320+ | Gemini 305 variant |
 | **Gemini 335** | Stereo Vision | **640×400** | **1920×1080** | 30 fps | 0.15-5m | USB 3.0 | 67°×45° | No | €250-300 | Binocular + structured light |
 | G Orbbec - Stereo Vision (Gemini*640×400** | **1920×1080** | 30 fps | 0.15-5m | USB 3.0 | 67°×45° | No | €260-310 | Long-range variant |
@@ -110,18 +110,18 @@
 
 | Model | Technology | Max Depth Resolution | Max RGB Resolution | Max FPS | Range | Connectivity | FOV (H×V) | IMU | Price (€) | Notes |
 |-------|------------|---------------------|-------------------|---------|-------|--------------|-----------|-----|-----------|-------|
-| **Femto Bolt** | iToF | **1024×1024** | **3840×2160** | 30 fps | 0.5-5.46m | USB 3.0 | 75°/120° NFOV/WFOV | Yes | €300-400 | **Azure SDK, 4K RGB, 4.35W avg** |
-| **Femto Mega** | iToF | **1024×1024** | **3840×2160** | 25 fps | 0.5-5.46m | **USB 3.0 / PoE+ / GigE** | 75°/120° NFOV/WFOV | Yes | €350-450 | **Jetson Nano, <13W avg, PoE+** |
-| **Femto Mega I** | iToF | **1024×1024** | **3840×2160** | 25 fps | 0.5-5.46m | USB 3.0 / PoE+ / GigE | 75°/120° NFOV/WFOV | Yes | €400-500 | Enhanced Mega, Jetson, <13W |
-| Femto W | iToF | **640×480** | **3840×2160** | 30 fps | 0.2-2.5m | USB 3.0 | H90° V74° | Yes | €250 | 940nm, avg <6.7W, indoor only |
+| **<a href="https://www.orbbec.com/products/tof-camera/femto-bolt/" target="_blank">Femto Bolt</a>** | iToF | **1024×1024** | **3840×2160** | 30 fps | 0.5-5.46m | USB 3.0 | 75°/120° NFOV/WFOV | Yes | €300-400 | **Azure SDK, 4K RGB, 4.35W avg** |
+| **<a href="https://www.orbbec.com/products/tof-camera/femto-mega/" target="_blank">Femto Mega</a>** | iToF | **1024×1024** | **3840×2160** | 25 fps | 0.5-5.46m | **USB 3.0 / PoE+ / GigE** | 75°/120° NFOV/WFOV | Yes | €350-450 | **Jetson Nano, <13W avg, PoE+** |
+| **<a href="https://www.orbbec.com/products/tof-camera/femto-mega-i/" target="_blank">Femto Mega I</a>** | iToF | **1024×1024** | **3840×2160** | 25 fps | 0.5-5.46m | USB 3.0 / PoE+ / GigE | 75°/120° NFOV/WFOV | Yes | €400-500 | Enhanced Mega, Jetson, <13W |
+| <a href="https://www.orbbec.com/products/tof-camera/femto-w/" target="_blank">Femto W</a> | iToF | **640×480** | **3840×2160** | 30 fps | 0.2-2.5m | USB 3.0 | H90° V74° | Yes | €250 | 940nm, avg <6.7W, indoor only |
 
 ### Stereolabs ZED
 
 | Model | Technology | Max Depth Resolution | Max RGB Resolution | Max FPS | Range | Connectivity | FOV (H×V) | IMU | Price (€) | Notes |
 |-------|------------|---------------------|-------------------|---------|-------|--------------|-----------|-----|-----------|-------|
-| **ZED 2** | Stereo Vision | **2208×1242** | **2208×1242** | **60 fps** | 0.5-20m | USB 3.0 | 110°×70° | Yes | €450 | **Spatial AI SDK, robust** |
-| **ZED 2i** | Stereo Vision | **2208×1242** | **2208×1242** | **60 fps** | 0.5-20m | USB 3.0 | 110°×70° | Yes | €550 | **Industrial, global shutter** |
-| **ZED X** | Stereo Vision | **2208×1242** | **2208×1242** | **120 fps** | 0.5-20m | **USB 3.1 / GMSL2** | 110°×70° | Yes | €750 | **Highest FPS, GMSL option** |
+| **<a href="https://www.stereolabs.com/en-fr/products/zed-2" target="_blank">ZED 2</a>** | Stereo Vision | **2208×1242** | **2208×1242** | **60 fps** | 0.5-20m | USB 3.0 | 110°×70° | Yes | €450 | **Spatial AI SDK, robust** |
+| **<a href="https://www.stereolabs.com/en-fr/products/zed-2i" target="_blank">ZED 2i</a>** | Stereo Vision | **2208×1242** | **2208×1242** | **60 fps** | 0.5-20m | USB 3.0 | 110°×70° | Yes | €550 | **Industrial, global shutter** |
+| **<a href="https://www.stereolabs.com/en-fr/products/zed-x" target="_blank">ZED X</a>** | Stereo Vision | **2208×1242** | **2208×1242** | **120 fps** | 0.5-20m | **USB 3.1 / GMSL2** | 110°×70° | Yes | €750 | **Highest FPS, GMSL option** |
 | ZED Mini | Stereo Vision | **1344×376** | 1344×376 | 60 fps | 0.3-15m | USB 3.0 | 90°×60° | Yes | €350 | Compact, AR/VR |
 
 **Key Features:**
@@ -130,7 +130,7 @@
 
 | Model | Technology | Max Depth Resolution | Max RGB Resolution | Max FPS | Range | Connectivity | FOV (H×V) | IMU | Price (€) | Notes |
 |-------|------------|---------------------|-------------------|---------|-------|--------------|-----------|-----|-----------|-------|
-| **Azure Kinect DK** | iToF | **1024×1024** | **3840×2160 (4K)** | 30 fps | 0.5-5.46m | USB 3.0 | 75°/120° NFOV/WFOV | Yes | €500 | **7 mics, discontinued 2023** |
+| **<a href="https://azure.microsoft.com/en-us/products/kinect-dk/" target="_blank">Azure Kinect DK</a>** | iToF | **1024×1024** | **3840×2160 (4K)** | 30 fps | 0.5-5.46m | USB 3.0 | 75°/120° NFOV/WFOV | Yes | €500 | **7 mics, discontinued 2023** |
 
 **Note:** Replaced by Orbbec Femto Bolt/Mega with compatible SDK
 
@@ -140,7 +140,7 @@
 
 | Brand | Model | Technology | Max Depth Resolution | Max RGB Resolution | Max FPS | Range | Connectivity | FOV | Price (€) | Notes |
 |-------|-------|------------|---------------------|-------------------|---------|-------|--------------|-----|-----------|-------|
-| **Basler** | blaze-101 | iToF | **640×480** | Optional RGB | 30 fps | 0.3-10m | **GigE / USB 3.0** | 71°×55° | €1,000-1,500 | Compact industrial |
+| **Basler** | <a href="https://www.baslerweb.com/en/products/cameras/3d-cameras/time-of-flight-camera/blaze-101/" target="_blank">blaze-101</a> | iToF | **640×480** | Optional RGB | 30 fps | 0.3-10m | **GigE / USB 3.0** | 71°×55° | €1,000-1,500 | Compact industrial |
 |Note: Replaced by Orbbec Femto Bolt/Mega with compatible SDK*
 
 ### Industrial
@@ -149,10 +149,10 @@
 
 | Brand | Model | Type | Points/sec | Max FPS | Range | Connectivity | FOV | Price (€) | Notes |
 |-------|-------|------|------------|---------|-------|--------------|-----|-----------|-------|
-| **Livox** | Mid-360 | LiDAR | 100K pts/sec | 10 Hz | 0.5-40m | Ethernet | 360°×59° | €500-600 | 360° horizontal |
-| **Ouster** | OS0/OS1 | LiDAR | Up to 2048 beams | 10/20 Hz | 0.5-50m | **Ethernet** | 360° | €3,000-15,000 | Professional automotive |
-| **Velodyne** | VLP-16 | LiDAR | 16 channels | 5-20 Hz | 100m | **Ethernet** | 360°×30° | €4,000-8,000 | Classic automotive |
-| **RoboSense** | RS-LiDAR-M1 | LiDAR | 625K pts/sec | 10 Hz | 200m | Ethernet | 120°×25° | €3,000+ | MEMS solid-state |
+| **Livox** | <a href="https://www.livoxtech.com/mid-360" target="_blank">Mid-360</a> | LiDAR | 100K pts/sec | 10 Hz | 0.5-40m | Ethernet | 360°×59° | €500-600 | 360° horizontal |
+| **Ouster** | <a href="https://ouster.com/products/scanning-lidar/os0-sensor/" target="_blank">OS0</a>/<a href="https://ouster.com/products/scanning-lidar/os1-sensor/" target="_blank">OS1</a> | LiDAR | Up to 2048 beams | 10/20 Hz | 0.5-50m | **Ethernet** | 360° | €3,000-15,000 | Professional automotive |
+| **Velodyne** | <a href="https://velodynelidar.com/products/puck/" target="_blank">VLP-16</a> | LiDAR | 16 channels | 5-20 Hz | 100m | **Ethernet** | 360°×30° | €4,000-8,000 | Classic automotive |
+| **RoboSense** | <a href="https://www.robosense.ai/en/rslidar/RS-LiDAR-M1" target="_blank">RS-LiDAR-M1</a> | LiDAR | 625K pts/sec | 10 Hz | 200m | Ethernet | 120°×25° | €3,000+ | MEMS solid-state |
 
 ### LiDARComparison
 
