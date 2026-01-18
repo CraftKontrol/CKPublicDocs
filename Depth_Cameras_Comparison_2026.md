@@ -7,8 +7,6 @@ Comprehensive comparison of depth cameras for robotics and computer vision appli
 ## Complete Comparison - All Cameras
 *Sorted by: Depth Resolution → Connectivity (Ethernet first) → Price*
 
-<div style="font-size: 0.85em;">
-
 | Model | Depth Resolution | Color Resolution | FPS | Range | FOV | Stereo | Connectivity | Price | Usage | Provider | TD Compatible |
 |-------|-----------------|------------------|-----|-------|-----|--------|--------------|-------|-------|----------|---------------|
 | [ZED 2](https://www.stereolabs.com/en-fr/products/zed-2) | 2208x1242 (2.7MP) | 4416x2484 (4K) | 15/30/60 | 0.2-20m | H110° V70° | Yes (Stereo) | USB 3.0 | ~$400-600 | General robotics | Stereolabs | Community support |
@@ -33,13 +31,9 @@ Comprehensive comparison of depth cameras for robotics and computer vision appli
 | [Azure Kinect DK](https://azure.microsoft.com/fr-fr/products/kinect-dk) | 1024x1024@15, 640x576@30 | 3840x2160 (12MP) | 15-30 | 0.25-5.46m | W:H120° V120° N:H75° V65° | No (ToF) | USB 3 | ~$400 (discontinued) | Body tracking, spatial AI | Microsoft | Yes (legacy support) |
 | [Astra Series](https://www.orbbec.com/products/structured-light-camera/astra-series/) | 640x480 | 640x480 or 1920x1080 | 30 | 0.4-8m | H58° V46° | No (Structured Light) | USB 2.0 Type-A | ~$100-200 | Budget indoor | Orbbec | Yes (OpenNI SDK) |
 
-</div>
-
 ---
 
 ## Detailed Specifications by Manufacturer
-
-<div style="font-size: 0.85em;">
 
 ### Intel RealSense Series
 
@@ -96,8 +90,6 @@ Comprehensive comparison of depth cameras for robotics and computer vision appli
 | Model | Depth Resolution | Color Resolution | FPS | Range | FOV | Stereo | Connectivity | Price | Usage | Provider | TD Compatible |
 |-------|-----------------|------------------|-----|-------|-----|--------|--------------|-------|-------|----------|---------------|
 | [Azure Kinect DK](https://azure.microsoft.com/fr-fr/products/kinect-dk) | 1024x1024@15, 640x576@30 | 3840x2160 (12MP) | 15-30 | 0.25-5.46m | WFOV: H120° V120°, NFOV: H75° V65° | No (ToF) | USB 3 | ~$400 (discontinued) | Body tracking, spatial AI | Microsoft | Yes (legacy support) |
-
-</div>
 
 ---
 
