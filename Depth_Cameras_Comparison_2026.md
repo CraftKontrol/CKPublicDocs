@@ -93,6 +93,45 @@ Comprehensive comparison of depth cameras for robotics and computer vision appli
 
 ---
 
+## Skeleton Tracking Support
+
+| <sub><sup>Model</sup></sub> | <sub><sup>Native Support</sup></sub> | <sub><sup>SDK/Framework</sup></sub> | <sub><sup>Body Joints</sup></sub> | <sub><sup>Performance</sup></sub> | <sub><sup>Notes</sup></sub> |
+|-------|-----------------|------------------|-----|-------|-----|
+| <sub><sup>[Azure Kinect DK](https://azure.microsoft.com/fr-fr/products/kinect-dk)</sup></sub> | <sub><sup>✅ Yes</sup></sub> | <sub><sup>Azure Kinect Body Tracking SDK</sup></sub> | <sub><sup>32 joints</sup></sub> | <sub><sup>Excellent</sup></sub> | <sub><sup>Industry standard, optimized for body tracking</sup></sub> |
+| <sub><sup>[Femto Bolt](https://www.orbbec.com/products/tof-camera/femto-bolt/)</sup></sub> | <sub><sup>✅ Yes</sup></sub> | <sub><sup>Orbbec Body Tracking SDK (Azure Kinect compatible)</sup></sub> | <sub><sup>32 joints</sup></sub> | <sub><sup>Excellent</sup></sub> | <sub><sup>Azure Kinect replacement, same SDK compatibility</sup></sub> |
+| <sub><sup>[Femto Mega](https://www.orbbec.com/products/tof-camera/femto-mega/)</sup></sub> | <sub><sup>✅ Yes</sup></sub> | <sub><sup>Orbbec Body Tracking SDK</sup></sub> | <sub><sup>32 joints</sup></sub> | <sub><sup>Excellent</sup></sub> | <sub><sup>Full body tracking support with industrial connectivity</sup></sub> |
+| <sub><sup>[Femto Mega I](https://www.orbbec.com/products/tof-camera/femto-mega-i/)</sup></sub> | <sub><sup>✅ Yes</sup></sub> | <sub><sup>Orbbec Body Tracking SDK</sup></sub> | <sub><sup>32 joints</sup></sub> | <sub><sup>Excellent</sup></sub> | <sub><sup>IP65 rated with body tracking for industrial use</sup></sub> |
+| <sub><sup>[Astra Series](https://www.orbbec.com/products/structured-light-camera/astra-series/)</sup></sub> | <sub><sup>✅ Yes</sup></sub> | <sub><sup>Astra Body Tracking SDK, OpenNI/NiTE</sup></sub> | <sub><sup>15 joints</sup></sub> | <sub><sup>Good</sup></sub> | <sub><sup>Budget-friendly body tracking solution</sup></sub> |
+| <sub><sup>[Astra 2](https://www.orbbec.com/products/structured-light-camera/astra-2/)</sup></sub> | <sub><sup>✅ Yes</sup></sub> | <sub><sup>Orbbec Body Tracking SDK</sup></sub> | <sub><sup>19 joints</sup></sub> | <sub><sup>Very Good</sup></sub> | <sub><sup>Enhanced tracking vs. original Astra</sup></sub> |
+| <sub><sup>[D456](https://www.intel.fr/content/www/fr/fr/products/sku/236331/intel-realsense-depth-camera-d456/specifications.html)</sup></sub> | <sub><sup>⚠️ Limited</sup></sub> | <sub><sup>Third-party (Nuitrack, Cubemos)</sup></sub> | <sub><sup>Varies (15-19)</sup></sub> | <sub><sup>Good</sup></sub> | <sub><sup>Requires third-party SDK, not optimized for body tracking</sup></sub> |
+| <sub><sup>[D455F](https://www.intel.fr/content/www/fr/fr/products/sku/233193/intel-realsense-depth-camera-d455f/specifications.html)</sup></sub> | <sub><sup>⚠️ Limited</sup></sub> | <sub><sup>Third-party (Nuitrack, Cubemos)</sup></sub> | <sub><sup>Varies (15-19)</sup></sub> | <sub><sup>Good</sup></sub> | <sub><sup>Requires third-party SDK</sup></sub> |
+| <sub><sup>[D435iF](https://www.intel.fr/content/www/fr/fr/products/sku/233194/intel-realsense-depth-camera-d435if/specifications.html)</sup></sub> | <sub><sup>⚠️ Limited</sup></sub> | <sub><sup>Third-party (Nuitrack, Cubemos)</sup></sub> | <sub><sup>Varies (15-19)</sup></sub> | <sub><sup>Fair</sup></sub> | <sub><sup>Short range limits body tracking performance</sup></sub> |
+| <sub><sup>[D457](https://www.intel.fr/content/www/fr/fr/products/sku/230571/intel-realsense-depth-camera-d457/specifications.html)</sup></sub> | <sub><sup>⚠️ Limited</sup></sub> | <sub><sup>Third-party (Nuitrack, Cubemos)</sup></sub> | <sub><sup>Varies (15-19)</sup></sub> | <sub><sup>Good</sup></sub> | <sub><sup>Requires third-party SDK</sup></sub> |
+| <sub><sup>[ZED 2](https://www.stereolabs.com/en-fr/products/zed-2)</sup></sub> | <sub><sup>✅ Yes</sup></sub> | <sub><sup>ZED SDK (Body Tracking module)</sup></sub> | <sub><sup>18-34 joints (modes)</sup></sub> | <sub><sup>Very Good</sup></sub> | <sub><sup>AI-powered body tracking, multiple detection modes</sup></sub> |
+| <sub><sup>[ZED X](https://www.stereolabs.com/en-fr/products/zed-x)</sup></sub> | <sub><sup>✅ Yes</sup></sub> | <sub><sup>ZED SDK (Body Tracking module)</sup></sub> | <sub><sup>18-34 joints (modes)</sup></sub> | <sub><sup>Excellent</sup></sub> | <sub><sup>Industrial-grade body tracking with long range</sup></sub> |
+| <sub><sup>[ZED X One](https://www.stereolabs.com/en-fr/products/zed-x-one)</sup></sub> | <sub><sup>✅ Yes</sup></sub> | <sub><sup>ZED SDK (Body Tracking module)</sup></sub> | <sub><sup>18-34 joints (modes)</sup></sub> | <sub><sup>Very Good</sup></sub> | <sub><sup>Multi-camera body tracking systems</sup></sub> |
+| <sub><sup>[OAK-D W](https://shop.luxonis.com/products/oak-d-w?variant=43905772519647)</sup></sub> | <sub><sup>⚠️ Limited</sup></sub> | <sub><sup>Third-party / Custom models</sup></sub> | <sub><sup>Varies</sup></sub> | <sub><sup>Fair-Good</sup></sub> | <sub><sup>Can run pose estimation models on-device</sup></sub> |
+| <sub><sup>[OAK-D W PoE](https://shop.luxonis.com/products/oak-d-w-poe?variant=44043279302879)</sup></sub> | <sub><sup>⚠️ Limited</sup></sub> | <sub><sup>Third-party / Custom models</sup></sub> | <sub><sup>Varies</sup></sub> | <sub><sup>Fair-Good</sup></sub> | <sub><sup>Can run pose estimation models on-device</sup></sub> |
+| <sub><sup>[OAK 4 D](https://shop.luxonis.com/products/oak-4-d?variant=46428694446303)</sup></sub> | <sub><sup>⚠️ Limited</sup></sub> | <sub><sup>Third-party / Custom models</sup></sub> | <sub><sup>Varies</sup></sub> | <sub><sup>Good</sup></sub> | <sub><sup>Advanced AI capabilities for custom pose models</sup></sub> |
+| <sub><sup>[Gemini 335](https://www.orbbec.com/products/stereo-vision-camera/gemini-335/)</sup></sub> | <sub><sup>❌ No</sup></sub> | <sub><sup>Third-party only</sup></sub> | <sub><sup>N/A</sup></sub> | <sub><sup>N/A</sup></sub> | <sub><sup>Stereo vision, not optimized for skeleton tracking</sup></sub> |
+| <sub><sup>[Gemini 335LE](https://www.orbbec.com/gemini-335le/)</sup></sub> | <sub><sup>❌ No</sup></sub> | <sub><sup>Third-party only</sup></sub> | <sub><sup>N/A</sup></sub> | <sub><sup>N/A</sup></sub> | <sub><sup>Industrial stereo, not optimized for skeleton tracking</sup></sub> |
+| <sub><sup>[Gemini 345LG](https://www.orbbec.com/gemini-345lg/)</sup></sub> | <sub><sup>❌ No</sup></sub> | <sub><sup>Third-party only</sup></sub> | <sub><sup>N/A</sup></sub> | <sub><sup>N/A</sup></sub> | <sub><sup>Outdoor robotics focus, not for body tracking</sup></sub> |
+| <sub><sup>[Gemini 435LE](https://www.orbbec.com/gemini-435le/)</sup></sub> | <sub><sup>❌ No</sup></sub> | <sub><sup>Third-party only</sup></sub> | <sub><sup>N/A</sup></sub> | <sub><sup>N/A</sup></sub> | <sub><sup>Long-range industrial, not for body tracking</sup></sub> |
+| <sub><sup>[Gemini 215](https://www.orbbec.com/products/stereo-vision-camera/gemini-215/)</sup></sub> | <sub><sup>❌ No</sup></sub> | <sub><sup>Third-party only</sup></sub> | <sub><sup>N/A</sup></sub> | <sub><sup>N/A</sup></sub> | <sub><sup>Short-range scanning, not suitable for body tracking</sup></sub> |
+
+**Legend:**
+- **✅ Yes**: Native SDK support with optimized performance
+- **⚠️ Limited**: Requires third-party SDK or custom implementation
+- **❌ No**: Not suitable or supported for skeleton tracking
+
+**Recommended for Skeleton Tracking:**
+1. **Best Overall**: Azure Kinect DK, Femto Bolt - Industry-standard 32-joint tracking
+2. **Budget**: Astra Series, Astra 2 - Affordable body tracking solutions
+3. **Multi-camera**: ZED X, ZED X One - Advanced body tracking for complex setups
+4. **General Robotics**: ZED 2, Femto Mega - Versatile with good tracking performance
+
+---
+
 ## Key Features Summary
 
 ### Technology Types
