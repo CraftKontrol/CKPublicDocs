@@ -1,367 +1,129 @@
 # Depth Camera Comparison 2026
 **Updated:** Jan 17, 2026 | **Author:** Arnaud Cassone © Artcraft Visuals
 
-## Overall Devices
 
-### Best Resolution
+Comprehensive comparison of depth cameras for robotics and computer vision applications.
 
-| Rank | Model | Depth Resolution | RGB Resolution | Price | Technology | Notes |
-|------|-------|------------------|----------------|-------|------------|-------|
-| 1 | **ZED 2/2i/X** | **2208×1242** | **2208×1242** | €450-750 | Stereo Vision | Highest overall, 60-120fps, spatial AI |
-| 2 | **Astra 2** | **1600×1200** | 1920×1080 | €200-250 | Structured Light | Best structured light, best value |
-| 3 | **Lucid Helios2** | **1456×1088** | - | €1,500-3k | iToF | Industrial grade |
-| 4 | **Azure Kinect** | 1024×1024 | **3840×2160 (4K)** | €500 | iToF | Discontinued, highest RGB 
-| 5 | **Femto Bolt/Mega** | 1024×1024 | **3840×2160 (4K)** | €300-450 | iToF | Azure compatible, 4K RGB ||
-| 6 | **OAK-D Pro** | 1280×800 | **12MP (4K)** | $399 | Stereo Vision | 48 TOPS AI, laser dot |
-| 7 | **Photoneo PhoXi 3D** | 1680×1200 | - | €5,000+ | Structured Light | Industrial scanning |
-| 9 | **Zivid Two M130** | 1944×1200 | - | €10,000+ | Structured Light | Professional 3D scanning |
+## Complete Comparison - All Cameras
+*Sorted by: Depth Resolution → Connectivity (Ethernet first) → Price*
 
-### Best Connectivity
-
-| Type | Model | Price | Features | Range | Technology | Notes |
-|------|-------|-------|----------|-------|------------|-------|
-| **PoE** | **OAK-D Pro PoE** | $499 | 48 TOPS AI, 802.3af, 12MP RGB | 0.2-35m | Stereo Vision | No USB needed, AI onboard |
-| **PoE** | **OAK-D W PoE** | $549 | Wide 150° FOV, IP65, 12MP RGB | 0.4-6m | Stereo Vision | Wide stereo, 5.5W |
-| **PoE** | **OAK-D Pro W PoE** | $649 | IR dot/LED, 150° FOV, IP65, 12MP | 0.4-6m | Stereo Vision | Active stereo, wide, 7.5W |
-| **PoE** | **Femto Mega** | €350-450 | Triple: USB/PoE+/GigE, Jetson Nano | 0.5-5.46m | iToF | Azure SDK, <13W, 4K RGB |
-| **PoE** | **OAK-4** | $849 | RVC4, 52 TOPS, 48MP, IP67, Linux OS | 0.7-12m | Stereo + Multi | Standalone, USB or PoE |
-| **PoE** | **OAK-4 Pro** | $949 | RVC4, IR active, 52 TOPS, IP67 | 0.7-12m | Stereo + Multi | Active stereo, standalone |
-| **PoE** | **Zivid Two M130** | €10,000+ | Professional 3D, IP65 | 0.3-1.3m | Structured Light | Industrial scanning |
-| **PoE** | **Photoneo PhoXi 3D** | €5,000+ | High precision, GigE | 0.4-3m | Structured Light | Factory automation |
-| **Dual** | **Femto Mega I** | €400-500 | USB 3.0 + GigE PoE, enhanced | 0.4-5.5m | iToF | Azure compatible |
-| **GMSL** | **Intel D457** | €690 | GMSL/FAKRA, IP65, automotive | 0.4-6m | Stereo Vision | Automotive certified |
-| **GMSL2** | **ZED X** | €750 | GMSL2 or USB 3.1, 120fps | 0.5-20m | Stereo Vision | Highest FPS option |
-| **GigE** | **Lucid Helios2** | €1,500-3,000 | GigE, 1456×1088 depth | 0.3-10m | iToF | High resolution industrial |
-| **Ethernet** | **Livox Mid-360** | €500-600 | 360° horizontal, 100K pts/sec | 0.5-40m | LiDAR | Outdoor mapping |
-| **Ethernet** | **Ouster OS0/OS1** | €3,000-15k | 2048 beams, 10/20Hz | 0.5-50m | LiDAR | Professional automotive |
-| **USB 3.1** | **OAK-D Pro W** | $449 | 150°×110° ultra-wide FOV | 0.2-35m | Stereo Vision | Widest FOV |
-| **USB 3.0** | **Astra 2** | €200-250 | 1600×1200 depth, IMU, sync | 0.6-8m | Structured Light | Best value USB 3.0 |
-
-### Best SDK
-
-| SDK | Manufacturer | Languages | Platforms | Key Features | Best Models | Downloads/Community |
-|-----|--------------|-----------|-----------|--------------|-------------|---------------------|
-| **DepthAI** | Luxonis (OAK) | Python, C++ | Win/Linux/macOS/ARM | **48-52 TOPS AI**, onboard inference, PyTorch/TF/ONNX, ROS/ROS2, custom pipelines | OAK-D Pro, OAK-4 (52 TOPS), OAK-D W PoE, OAK-D Lite | **2.5M+ downloads**, open-source |
-| **RealSense 2.0** | Intel | Python, C++, C#, Node.js | Win/Linux/macOS | **Largest ecosystem**, Unity/Unreal, ROS/ROS2, best docs, proven | D455, D457, L515 | **Largest community** |
-| **ZED SDK** | Stereolabs | Python, C++, C#, Unity | Win/Linux | **Neural depth**, spatial AI, positional tracking, object/body detection, extreme conditions | ZED 2i, ZED X, ZED 2 | Strong, professional |
-| **Orbbec SDK** | Orbbec | Python, C++, C | Win/Linux | **Azure Kinect compatible**, TouchDesigner ready, multi-device sync, OpenNI | Femto Bolt/Mega, Astra 2, Gemini 2 | Growing, TD integration ✅ |
-| **Azure Kinect SDK** | Microsoft | Python, C++, C# | Win/Linux | 7-mic array, body tracking, cognitive services (discontinued) | Azure Kinect DK, Femto Bolt/Mega (compatible) | Large, maintained by Orbbec |
-| **Industrial SDKs** | Various | C++, C | Win/Linux | GigE Vision, GenICam, high precision, factory automation | Basler, Lucid, Zivid, Photoneo | Industry standard |
-
-## Specifications
-
-### Intel RealSense
-
-| Model | Technology | Max Depth Resolution | Max RGB Resolution | Max FPS | Range | Connectivity | FOV (H×V) | IMU | Price (€) | Notes |
-|-------|------------|---------------------|-------------------|---------|-------|--------------|-----------|-----|-----------|-------|
-| **<a href="https://www.intel.com/content/www/us/en/products/sku/201589/intel-realsense-depth-camera-d435if/specifications.html" target="_blank">D435if</a>** | Stereo Vision | **1280×720** | **1920×1080** | 90 fps | 0.3-10m | USB-C 3.1 | 86°×57° | Yes | €567 | IR pass filter + IMU |
-| **<a href="https://www.intel.com/content/www/us/en/products/sku/201590/intel-realsense-depth-camera-d455/specifications.html" target="_blank">D455</a>** | Stereo Vision | **1280×720** | **1280×720** | 90 fps | 0.4-6m | USB-C 3.1 | 86°×57° | Yes | €588 | **Global shutter, best outdoor** |
-| **<a href="https://www.intel.com/content/www/us/en/products/sku/201591/intel-realsense-depth-camera-d455f/specifications.html" target="_blank">D455f</a>** | Stereo Vision | **1280×720** | **1280×720** | 90 fps | 0.4-6m | USB-C 3.1 | 86°×57° | Yes | €612 | D455 + IR pass filter |
-| **<a href="https://www.intel.com/content/www/us/en/products/sku/231472/intel-realsense-depth-camera-d456/specifications.html" target="_blank">D456</a>** | Stereo Vision | **1280×720** | **1280×720** | 90 fps | 0.4-10m | USB-C 3.1 | 86°×57° | Yes | €678 | 3 sensors, extended range |
-| **<a href="https://www.intel.com/content/www/us/en/products/sku/231471/intel-realsense-depth-camera-d457/specifications.html" target="_blank">D457</a>** | Stereo Vision | **1280×720** | **1280×720** | 90 fps | 0.4-6m | **GMSL/FAKRA** | 86°×57° | Yes | €690 | **IP65, automotive** |
-| **<a href="https://www.intel.com/content/www/us/en/products/sku/191175/intel-realsense-lidar-camera-l515/specifications.html" target="_blank">L515</a>** | LiDAR (dToF) | **1024×768** | **1920×1080** | 30 fps | 0.25-9m | USB-C 3.1 | 70°×55° | No | €450+ | ±5mm accuracy, discontinued |
-
-### Luxonis OAK
-
-| Model | Technology | Max Depth Resolution | Max RGB Resolution | Max FPS | Range | Connectivity | FOV (H×V) | IMU | Price ($) | Notes |
-|-------|------------|---------------------|-------------------|---------|-------|--------------|-----------|-----|-----------|-------|
-| **<a href="https://shop.luxonis.com/products/oak-d-lite" target="_blank">OAK-D Lite</a>** | Stereo Vision | **1280×800** | **4K (3840×2160)** | 60 fps | 0.2-35m | USB-C 3.1 | 127°×80° | No | $150 | Budget, Myriad X AI |
-| **<a href="https://shop.luxonis.com/products/oak-d" target="_blank">OAK-D</a>** | Stereo Vision | **1280×800** | **4K (3840×2160)** | 60 fps | 0.2-35m | USB-C 3.1 | 127°×80° | Yes | $299 | **48 TOPS AI, onboard CV** |
-| **<a href="https://shop.luxonis.com/products/oak-d-pro" target="_blank">OAK-D Pro</a>** | Stereo Vision | **1280×800** | **12MP (4K)** | 60 fps | 0.2-35m | USB-C 3.1 | 127°×80° | Yes | $399 | **Laser dot, night vision** |
-| **<a href="https://shop.luxonis.com/products/oak-d-pro-poe" target="_blank">OAK-D Pro PoE</a>** | Stereo Vision | **1280×800** | **12MP (4K)** | 60 fps | 0.2-35m | **PoE (802.3af)** | 127°×80° | Yes | $499 | **Native PoE, no USB** |
-| **<a href="https://shop.luxonis.com/products/oak-d-pro-w" target="_blank">OAK-D Pro W</a>** | Stereo Vision | **1280×800** | **12MP (4K)** | 60 fps | 0.2-35m | USB-C 3.1 | **150°×110°** | Yes | $449 | **Ultra-wide FOV** |
-| **<a href="https://shop.luxonis.com/products/oak-d-w-poe" target="_blank">OAK-D W PoE</a>** | Stereo Vision | **1280×800** | **12MP (IMX378)** | 60 fps | 0.4-6m | **PoE (802.3af)** | **150°×110°** | Yes | $549 | **Wide FOV, IP65, 5.5W** |
-| **<a href="https://shop.luxonis.com/products/oak-d-pro-w-poe" target="_blank">OAK-D Pro W PoE</a>** | Stereo Vision | **1280×800** | **12MP (IMX378)** | 60 fps | 0.4-6m | **PoE (802.3af)** | **150°×110°** | Yes | $649 | **IR dot + LED, IP65, 7.5W** |
-| **<a href="https://shop.luxonis.com/products/oak-4-d" target="_blank">OAK-4</a>** | Stereo + Multi | **1280×800** | **48MP** | 60 fps | 0.7-12m | USB-C / PoE | 127°×80° | Yes | $849 | **RVC4, 52 TOPS, IP67, Linux** |
-| **<a href="https://shop.luxonis.com/products/oak-4-d-ea" target="_blank">OAK-4 Pro</a>** | Stereo + Multi | **1280×800** | **48MP** | 60 fps | 0.7-12m | USB-C / PoE | 127°×80° | Yes | $949 | **RVC4, IR dot/LED, IP67, 52 TOPS** |
-
-**Key Features:**
-- All models include Myriad X VPU (48 TOPS AI processing)
--All OAK: Myriad X VPU (48 TOPS AI), onboard CV/ML, PyTorch/TensorFlow/ONNX support*
-
-### Orbbec - Structured Light (Astra Series)
-
-| Model | Technology | Max Depth Resolution | Max RGB Resolution | Max FPS | Range | Connectivity | FOV (H×V) | IMU | Price (€) | Notes |
-|-------|------------|---------------------|-------------------|---------|-------|--------------|-----------|-----|-----------|-------|
-| **<a href="https://www.orbbec.com/products/structured-light-camera/astra-2/" target="_blank">Astra 2</a>** | Structured Light | **1600×1200** | **1920×1080** | 30 fps | 0.6-8m | **USB 3.0 Type-C** | Depth: 58.2°×45.2° / RGB: 74.7°×46.2° | Yes | €200-250 | **Orbbec ASIC, 241g, multi-camera sync** |
-| Astra+ | Structured Light | **640×480** | 640×480 | 30 fps | 0.6-8m | USB 2.0 | 60°×49.5° | No | €150 | Legacy, VGA RGB |
-| Astra Mini Pro | Structured Light | **640×480** | 1280×960 | 30 fps | 0.35-2.5m | USB 2.0 | 60°×49.5° | No | €200 | Compact, short range |
-| Astra Embedded S | Structured Light | **640×480** | 1280×960 | 30 fps | 0.6-8m | USB 2.0 | 60°×49.5° | No | - | Legacy, embedded |
-
-#### Stereo Vision (Gemini Series)
-
-| Model | Technology | Max Depth Resolution | Max RGB Resolution | Max FPS | Range | Connectivity | FOV (H×V) | IMU | Price (€) | Notes |
-|-------|------------|---------------------|-------------------|---------|-------|--------------|-----------|-----|-----------|-------|
-| **<a href="https://www.orbbec.com/products/stereo-vision-camera/gemini-2/" target="_blank">Gemini 2</a>** | Stereo Vision | **640×400** | **1920×1080** | 30 fps | 0.5-5m | USB 3.0 | 67°×45° | No | €200-250 | Good value |
-| **<a href="https://www.orbbec.com/products/stereo-vision-camera/gemini-305/" target="_blank">Gemini 305</a>** | Stereo Vision | **640×400** | **1920×1080** | 30 fps | **0.04-1m** | USB 3.0 | 67°×45° | Yes | €300+ | **4cm ultra-close, 65g** |
-| **Gemini 305g** | Stereo Vision | **640×400** | **1920×1080** | 30 fps | 0.04-1m | USB 3.0 | 67°×45° | Yes | €320+ | Gemini 305 variant |
-| **Gemini 335** | Stereo Vision | **640×400** | **1920×1080** | 30 fps | 0.15-5m | USB 3.0 | 67°×45° | No | €250-300 | Binocular + structured light |
-| G Orbbec - Stereo Vision (Gemini*640×400** | **1920×1080** | 30 fps | 0.15-5m | USB 3.0 | 67°×45° | No | €260-310 | Long-range variant |
-| Gemini 335Lg | Stereo Vision | **640×400** | **1920×1080** | 30 fps | 0.15-5m | USB 3.0 | 67°×45° | Yes | €280-330 | Long-range + global shutter |
-| Gemini 336 | Stereo Vision | **640×400** | **1920×1080** | 30 fps | 0.15-5m | USB 3.0 | 67°×45° | No | €270-320 | Enhanced Gemini 335 |
-
-#### ToF (Time-of-Flight) Series
-
-| Model | Technology | Max Depth Resolution | Max RGB Resolution | Max FPS | Range | Connectivity | FOV (H×V) | IMU | Price (€) | Notes |
-|-------|------------|---------------------|-------------------|---------|-------|--------------|-----------|-----|-----------|-------|
-| **<a href="https://www.orbbec.com/products/tof-camera/femto-bolt/" target="_blank">Femto Bolt</a>** | iToF | **1024×1024** | **3840×2160** | 30 fps | 0.5-5.46m | USB 3.0 | 75°/120° NFOV/WFOV | Yes | €300-400 | **Azure SDK, 4K RGB, 4.35W avg** |
-| **<a href="https://www.orbbec.com/products/tof-camera/femto-mega/" target="_blank">Femto Mega</a>** | iToF | **1024×1024** | **3840×2160** | 25 fps | 0.5-5.46m | **USB 3.0 / PoE+ / GigE** | 75°/120° NFOV/WFOV | Yes | €350-450 | **Jetson Nano, <13W avg, PoE+** |
-| **<a href="https://www.orbbec.com/products/tof-camera/femto-mega-i/" target="_blank">Femto Mega I</a>** | iToF | **1024×1024** | **3840×2160** | 25 fps | 0.5-5.46m | USB 3.0 / PoE+ / GigE | 75°/120° NFOV/WFOV | Yes | €400-500 | Enhanced Mega, Jetson, <13W |
-| <a href="https://www.orbbec.com/products/tof-camera/femto-w/" target="_blank">Femto W</a> | iToF | **640×480** | **3840×2160** | 30 fps | 0.2-2.5m | USB 3.0 | H90° V74° | Yes | €250 | 940nm, avg <6.7W, indoor only |
-
-### Stereolabs ZED
-
-| Model | Technology | Max Depth Resolution | Max RGB Resolution | Max FPS | Range | Connectivity | FOV (H×V) | IMU | Price (€) | Notes |
-|-------|------------|---------------------|-------------------|---------|-------|--------------|-----------|-----|-----------|-------|
-| **<a href="https://www.stereolabs.com/en-fr/products/zed-2" target="_blank">ZED 2</a>** | Stereo Vision | **2208×1242** | **2208×1242** | **60 fps** | 0.5-20m | USB 3.0 | 110°×70° | Yes | €450 | **Spatial AI SDK, robust** |
-| **<a href="https://www.stereolabs.com/en-fr/products/zed-2i" target="_blank">ZED 2i</a>** | Stereo Vision | **2208×1242** | **2208×1242** | **60 fps** | 0.5-20m | USB 3.0 | 110°×70° | Yes | €550 | **Industrial, global shutter** |
-| **<a href="https://www.stereolabs.com/en-fr/products/zed-x" target="_blank">ZED X</a>** | Stereo Vision | **2208×1242** | **2208×1242** | **120 fps** | 0.5-20m | **USB 3.1 / GMSL2** | 110°×70° | Yes | €750 | **Highest FPS, GMSL option** |
-| ZED Mini | Stereo Vision | **1344×376** | 1344×376 | 60 fps | 0.3-15m | USB 3.0 | 90°×60° | Yes | €350 | Compact, AR/VR |
-
-**Key Features:**
-- Spatial AI SDK with neural depth
--All ZED: Spatial AI SDK, neural depth, positional tracking, object/body detection, works in extreme conditions (60kmph, 45°C)* Microsoft Azure Kinect
-
-| Model | Technology | Max Depth Resolution | Max RGB Resolution | Max FPS | Range | Connectivity | FOV (H×V) | IMU | Price (€) | Notes |
-|-------|------------|---------------------|-------------------|---------|-------|--------------|-----------|-----|-----------|-------|
-| **<a href="https://azure.microsoft.com/en-us/products/kinect-dk/" target="_blank">Azure Kinect DK</a>** | iToF | **1024×1024** | **3840×2160 (4K)** | 30 fps | 0.5-5.46m | USB 3.0 | 75°/120° NFOV/WFOV | Yes | €500 | **7 mics, discontinued 2023** |
-
-**Note:** Replaced by Orbbec Femto Bolt/Mega with compatible SDK
+| Model | Depth Resolution | Color Resolution | FPS | Range | FOV | Stereo | Connectivity | Price | Usage | Provider | TD Compatible |
+|-------|-----------------|------------------|-----|-------|-----|--------|--------------|-------|-------|----------|---------------|
+| [ZED 2](https://www.stereolabs.com/en-fr/products/zed-2) | 2208x1242 (2.7MP) | 4416x2484 (4K) | 15/30/60 | 0.2-20m | H110° V70° | Yes (Stereo) | USB 3.0 | ~$400-600 | General robotics | Stereolabs | Community support |
+| [ZED X](https://www.stereolabs.com/en-fr/products/zed-x) | 1920x1200 (2.3MP) | 1920x1200 GS or 3840x2160 4K HDR | 15/30/60 | 1-20m | N:H80° V52° W:H110° V80° | Yes (Stereo) | GMSL2 | ~$600-900 | Industrial robotics | Stereolabs | Community support |
+| [ZED X One](https://www.stereolabs.com/en-fr/products/zed-x-one) | 1920x1200 (2.3MP) | 1920x1200 GS @60 or 3840x2160 4K @15 | 15/30/60/120 | Custom | N:H80° V52° W:H110° V80° F:H195° V115° | Monocular/Custom | GMSL2/MIPI | €280-€380 | Multi-camera systems | Stereolabs | Community support |
+| [OAK 4 D](https://shop.luxonis.com/products/oak-4-d?variant=46428694446303) | 1920x1200 | 48MP | 60 depth | 0.7-12m | H110° V80° | Yes | USB3 & PoE | $849 | Advanced edge AI | Luxonis | Community support |
+| [Astra 2](https://www.orbbec.com/products/structured-light-camera/astra-2/) | 1600x1200 | 1920x1080 | 30 | 0.6-8m | H58° V45° | No (Structured Light) | USB 3.0 Type-C | ~$200-300 | Indoor scanning | Orbbec | Yes (SDK available) |
+| [Gemini 435LE](https://www.orbbec.com/gemini-435le/) | High density | 1920x1080 | 30 | 0.3-20m | H90° V65° | Yes (Stereo) | Ethernet PoE | ~$400-500 | Long-range industrial | Orbbec | Yes (SDK available) |
+| [Gemini 345LG](https://www.orbbec.com/gemini-345lg/) | 1280x960 | 1920x1080 | 30 | 0.3-10m | W:H104° V87° S:H91° V78° | Yes (Stereo) | GMSL2/USB 3.0 | ~$400-500 | Outdoor robotics | Orbbec | Yes (SDK available) |
+| [Gemini 335LE](https://www.orbbec.com/gemini-335le/) | 1280x800 | 1920x1080 | 30 | 0.26-3m | H90° V65° | Yes (Active/Passive) | Ethernet PoE | ~$300-400 | Industrial AMR | Orbbec | Yes (SDK available) |
+| [OAK-D W PoE](https://shop.luxonis.com/products/oak-d-w-poe?variant=44043279302879) | 1280x800 | 4K@30, 1080p@60 (12MP IMX378) | 30 depth, 60 RGB | 0.4-6m | H150° (stereo) H120° (RGB) | Yes | Ethernet PoE | $549 | Wide FOV robotics | Luxonis | Community support |
+| [Femto Mega I](https://www.orbbec.com/products/tof-camera/femto-mega-i/) | 1024x1024@15, 640x576@30 | 3840x2160@25 | 10-30 | 0.25-5.46m | W:H120° V120° N:H75° V65° | No (ToF) | Ethernet M12 PoE | ~$700-900 | Industrial IP65 | Orbbec | Yes (SDK available) |
+| [Femto Mega](https://www.orbbec.com/products/tof-camera/femto-mega/) | 1024x1024@15, 640x576@30 | 3840x2160@25 | 15-30 | 0.25-5.46m | W:H120° V120° N:H75° V65° | No (ToF) | USB 3.0/Ethernet PoE | ~$500-600 | Industrial w/ Jetson Nano | Orbbec | Yes (SDK available) |
+| [D457](https://www.intel.fr/content/www/fr/fr/products/sku/230571/intel-realsense-depth-camera-d457/specifications.html) | 1280x720 | RGB supported | up to 90 | 0.6-6m | H87° V58° | Yes (Stereo) | GMSL/FAKRA | N/A | Automotive/industrial | Intel | Yes |
+| [D456](https://www.intel.fr/content/www/fr/fr/products/sku/236331/intel-realsense-depth-camera-d456/specifications.html) | 1280x720 | RGB supported | up to 90 | 0.6-6m | H86° V57° | Yes (Stereo) | USB 3.1 | N/A | General purpose | Intel | Yes |
+| [D455F](https://www.intel.fr/content/www/fr/fr/products/sku/233193/intel-realsense-depth-camera-d455f/specifications.html) | 1280x720 | RGB supported | up to 90 | 0.6-6m | H86° V57° | Yes (Stereo) | USB 3.1 | N/A | General purpose | Intel | Yes |
+| [D435iF](https://www.intel.fr/content/www/fr/fr/products/sku/233194/intel-realsense-depth-camera-d435if/specifications.html) | 1280x720 | RGB supported | N/A | 0.3-3m | H87° V58° | Yes (Active Stereo) | USB 3 Type-C | N/A | Short/mid-range | Intel | Yes |
+| [Gemini 335](https://www.orbbec.com/products/stereo-vision-camera/gemini-335/) | 1280x800 | 1920x1080 | 30 | 0.26-3m | H90° V65° | Yes (Active/Passive) | USB 3.0 Type-C | ~$200-300 | AMR, robotics | Orbbec | Yes (SDK available) |
+| [Gemini 215](https://www.orbbec.com/products/stereo-vision-camera/gemini-215/) | 1280x800 | 1920x1080 | 30 | 0.15-0.7m | H63° V46° | Yes (Active Stereo) | USB 3.0 | ~$150-250 | Short-range scanning | Orbbec | Yes (SDK available) |
+| [OAK-D W](https://shop.luxonis.com/products/oak-d-w?variant=43905772519647) | 1280x800 | 4K@30, 1080p@60 (12MP IMX378) | 30 depth, 60 RGB | 0.4-6m | H150° (stereo) H120° (RGB) | Yes | USB-C | $399 | Wide FOV robotics | Luxonis | Community support |
+| [Femto Bolt](https://www.orbbec.com/products/tof-camera/femto-bolt/) | 1024x1024@15, 640x576@30 | 3840x2160@30 | 15-30 | 0.25-5.46m | W:H120° V120° N:H75° V65° | No (ToF) | USB 3.2 Type-C | ~$400-500 | Azure Kinect replacement | Orbbec | Yes (SDK available) |
+| [Azure Kinect DK](https://azure.microsoft.com/fr-fr/products/kinect-dk) | 1024x1024@15, 640x576@30 | 3840x2160 (12MP) | 15-30 | 0.25-5.46m | W:H120° V120° N:H75° V65° | No (ToF) | USB 3 | ~$400 (discontinued) | Body tracking, spatial AI | Microsoft | Yes (legacy support) |
+| [Astra Series](https://www.orbbec.com/products/structured-light-camera/astra-series/) | 640x480 | 640x480 or 1920x1080 | 30 | 0.4-8m | H58° V46° | No (Structured Light) | USB 2.0 Type-A | ~$100-200 | Budget indoor | Orbbec | Yes (OpenNI SDK) |
 
 ---
 
-### Industrial Depth Cameras
+## Detailed Specifications by Manufacturer
 
-| Brand | Model | Technology | Max Depth Resolution | Max RGB Resolution | Max FPS | Range | Connectivity | FOV | Price (€) | Notes |
-|-------|-------|------------|---------------------|-------------------|---------|-------|--------------|-----|-----------|-------|
-| **Lucid** | Helios2 | iToF | **1456×1088** | Optional RGB | 30 fps | 0.3-10m | **GigE** | Various | €1,500-3,000 | High resolution industrial |
-| **Zivid** | Two M130 | Structured Light | 1944×1200 | - | Variable | 0.3-1.3m | **GigE / PoE** | 60°×45° | €10,000+ | Professional 3D scanning |
-| **Photoneo** | PhoXi 3D | Structured Light | 1680×1200 | - | Variable | 0.4-3m | **GigE** | Configurable | €5,000+ | Factory automation |
+### Intel RealSense Series
 
-### Industrial
+| Model | Depth Resolution | Color Resolution | FPS | Range | FOV | Stereo | Connectivity | Price | Usage | Provider | TD Compatible |
+|-------|-----------------|------------------|-----|-------|-----|--------|--------------|-------|-------|----------|---------------|
+| [D456](https://www.intel.fr/content/www/fr/fr/products/sku/236331/intel-realsense-depth-camera-d456/specifications.html) | 1280x720 | RGB supported | up to 90 | 0.6m - 6m | H86° V57° | Yes (Stereo) | USB 3.1 | N/A | General purpose | Intel | Yes |
+| [D455F](https://www.intel.fr/content/www/fr/fr/products/sku/233193/intel-realsense-depth-camera-d455f/specifications.html) | 1280x720 | RGB supported | up to 90 | 0.6m - 6m | H86° V57° | Yes (Stereo) | USB 3.1 | N/A | General purpose | Intel | Yes |
+| [D435iF](https://www.intel.fr/content/www/fr/fr/products/sku/233194/intel-realsense-depth-camera-d435if/specifications.html) | 1280x720 | RGB supported | N/A | 0.3m - 3m | H87° V58° | Yes (Active Stereo) | USB 3 Type-C | N/A | Short/mid-range | Intel | Yes |
+| [D457](https://www.intel.fr/content/www/fr/fr/products/sku/230571/intel-realsense-depth-camera-d457/specifications.html) | 1280x720 | RGB supported | up to 90 | 0.6m - 6m | H87° V58° ±3 | Yes (Stereo) | GMSL/FAKRA | N/A | Automotive/industrial | Intel | Yes |
 
-### LiDAR Cameras
+## Luxonis OAK Series
 
-| Brand | Model | Type | Points/sec | Max FPS | Range | Connectivity | FOV | Price (€) | Notes |
-|-------|-------|------|------------|---------|-------|--------------|-----|-----------|-------|
-| **Livox** | <a href="https://www.livoxtech.com/mid-360" target="_blank">Mid-360</a> | LiDAR | 100K pts/sec | 10 Hz | 0.5-40m | Ethernet | 360°×59° | €500-600 | 360° horizontal |
-| **Ouster** | <a href="https://ouster.com/products/scanning-lidar/os0-sensor/" target="_blank">OS0</a>/<a href="https://ouster.com/products/scanning-lidar/os1-sensor/" target="_blank">OS1</a> | LiDAR | Up to 2048 beams | 10/20 Hz | 0.5-50m | **Ethernet** | 360° | €3,000-15,000 | Professional automotive |
-| **Velodyne** | <a href="https://velodynelidar.com/products/puck/" target="_blank">VLP-16</a> | LiDAR | 16 channels | 5-20 Hz | 100m | **Ethernet** | 360°×30° | €4,000-8,000 | Classic automotive |
-| **RoboSense** | <a href="https://www.robosense.ai/en/rslidar/RS-LiDAR-M1" target="_blank">RS-LiDAR-M1</a> | LiDAR | 625K pts/sec | 10 Hz | 200m | Ethernet | 120°×25° | €3,000+ | MEMS solid-state |
+| Model | Depth Resolution | Color Resolution | FPS | Range | FOV | Stereo | Connectivity | Price | Usage | Provider | TD Compatible |
+|-------|-----------------|------------------|-----|-------|-----|--------|--------------|-------|-------|----------|---------------|
+| [OAK-D W PoE](https://shop.luxonis.com/products/oak-d-w-poe?variant=44043279302879) | 1280x800 | 4K@30, 1080p@60 (12MP IMX378) | 30 depth, 60 RGB | 0.4m - 6m | Stereo: H150° V?, RGB: H120° | Yes | Ethernet PoE | $549 | Wide FOV robotics | Luxonis | Community support |
+| [OAK-D W](https://shop.luxonis.com/products/oak-d-w?variant=43905772519647) | 1280x800 | 4K@30, 1080p@60 (12MP IMX378) | 30 depth, 60 RGB | 0.4m - 6m | Stereo: H150° V?, RGB: H120° | Yes | USB-C | $399 | Wide FOV robotics | Luxonis | Community support |
+| [OAK 4 D](https://shop.luxonis.com/products/oak-4-d?variant=46428694446303) | 1920x1200 | 48MP | 60 depth | 0.7m - 12m | Baseline: 75mm | Yes | USB3 & PoE | $849 | Advanced edge AI | Luxonis | Community support |
 
-### LiDARComparison
+## Orbbec Gemini Series (Stereo Vision)
 
-| Technology | Depth Accuracy | Range | Outdoor Performance | Low Light | Response Time | Power | Cost | Best Use Case |
-|------------|---------------|-------|-------------------|-----------|---------------|-------|------|---------------|
-| **Stereo Vision** | cm | Good | Excellent | Weak | Medium | Low | Low | Outdoor robots, navigation |
-| **Structured Light** | µm-cm | Limited | Weak | Good | Slow | Medium | Medium | Indoor scanning, faces |
-| **iToF** | mm-cm | Scalable | Fair | Good | Very Fast | Medium | Medium | Indoor robots, gesture |
-| **dToF/LiDAR** | mm-cm | Scalable | Fair | Good | Fast | Medium-High | High | Precision mapping, long range |
+| Model | Depth Resolution | Color Resolution | FPS | Range | FOV | Stereo | Connectivity | Price | Usage | Provider | TD Compatible |
+|-------|-----------------|------------------|-----|-------|-----|--------|--------------|-------|-------|----------|---------------|
+| [Gemini 335](https://www.orbbec.com/products/stereo-vision-camera/gemini-335/) | 1280x800 | 1920x1080 | 30 | 0.10-20m+ (optimal: 0.26-3m) | Depth: H90° V65°, RGB: H86° V55° | Yes (Active/Passive) | USB 3.0 Type-C | ~$200-300 | AMR, robotics | Orbbec | Yes (SDK available) |
+| [Gemini 335LE](https://www.orbbec.com/gemini-335le/) | 1280x800 | 1920x1080 | 30 | 0.26-3m optimal | Depth: H90° V65°, RGB: H86° V55° | Yes (Active/Passive) | Ethernet PoE | ~$300-400 | Industrial AMR | Orbbec | Yes (SDK available) |
+| [Gemini 345LG](https://www.orbbec.com/gemini-345lg/) | 1280x960 | 1920x1080 | 30 | 0.3-10m (ideal: 0.3-6m) | Wide: H104° V87°, Standard: H91° V78° | Yes (Stereo) | GMSL2/USB 3.0 | ~$400-500 | Outdoor robotics | Orbbec | Yes (SDK available) |
+| [Gemini 435LE](https://www.orbbec.com/gemini-435le/) | High density | 1920x1080 | 30 | Up to 20m | N/A | Yes (Stereo) | Ethernet PoE | ~$400-500 | Long-range industrial | Orbbec | Yes (SDK available) |
+| [Gemini 215](https://www.orbbec.com/products/stereo-vision-camera/gemini-215/) | 1280x800 | 1920x1080 | 30 | 0.15-0.70m (ideal: 0.2-0.5m) | H63.5° V45.6° | Yes (Active Stereo) | USB 3.0 | ~$150-250 | Short-range scanning | Orbbec | Yes (SDK available) |
 
----
+## Orbbec Femto Series (ToF)
 
-## Techall Value
-1. **OAK-D Pro** ($399) - AI chip + 4K RGB + laser dot + IMU
-2. **Orbbec Femto Bolt** (€300-400) - Azure Kinect compatible, ToF
-3. **Intel D435i** (€468) - Proven ecosystem, IMU, wide FOV
+| Model | Depth Resolution | Color Resolution | FPS | Range | FOV | Stereo | Connectivity | Price | Usage | Provider | TD Compatible |
+|-------|-----------------|------------------|-----|-------|-----|--------|--------------|-------|-------|----------|---------------|
+| [Femto Bolt](https://www.orbbec.com/products/tof-camera/femto-bolt/) | 1024x1024@15, 640x576@30 | 3840x2160@30 | 15-30 | 0.25-5.46m | WFOV: H120° V120°, NFOV: H75° V65° | No (ToF) | USB 3.2 Type-C | ~$400-500 | Azure Kinect replacement | Orbbec | Yes (SDK available) |
+| [Femto Mega](https://www.orbbec.com/products/tof-camera/femto-mega/) | 1024x1024@15, 640x576@30 | 3840x2160@25 | 15-30 | 0.25-5.46m | WFOV: H120° V120°, NFOV: H75° V65° | No (ToF) | USB 3.0/Ethernet PoE | ~$500-600 | Industrial w/ Jetson Nano | Orbbec | Yes (SDK available) |
+| [Femto Mega I](https://www.orbbec.com/products/tof-camera/femto-mega-i/) | 1024x1024@15, 640x576@30 | 3840x2160@25 | 10-30 | 0.25-5.46m | WFOV: H120° V120°, NFOV: H75° V65° | No (ToF) | Ethernet M12 PoE | ~$700-900 | Industrial IP65 | Orbbec | Yes (SDK available) |
 
-### Best Budget
-1. **OAK-D Lite** ($150) - Unbeatable AI + 4K RGB
-2. **Orbbec Astra 2** (€200-250) - **1600×1200 depth**, Full HD RGB, USB 3.0, IMU
-3. **Gemini 2** (€200-250) - USB 3.0, good value
+## Orbbec Astra Series (Structured Light)
 
-### Best PoE (Power over Ethernet)
-## Best By Category
+| Model | Depth Resolution | Color Resolution | FPS | Range | FOV | Stereo | Connectivity | Price | Usage | Provider | TD Compatible |
+|-------|-----------------|------------------|-----|-------|-----|--------|--------------|-------|-------|----------|---------------|
+| [Astra Series](https://www.orbbec.com/products/structured-light-camera/astra-series/) | 640x480 | 640x480 or 1920x1080 | 30 | 0.6-8m (S: 0.4-2m) | H58.4° V45.5° | No (Structured Light) | USB 2.0 Type-A | ~$100-200 | Budget indoor | Orbbec | Yes (OpenNI SDK) |
+| [Astra 2](https://www.orbbec.com/products/structured-light-camera/astra-2/) | 1600x1200 | 1920x1080 | 30 | 0.6-8m | H58.2° V45.2° | No (Structured Light) | USB 3.0 Type-C | ~$200-300 | Indoor scanning | Orbbec | Yes (SDK available) |
 
-**Overall Value:** OAK-D Pro ($399) • Femto Bolt (€300-400) • D455 (€588)
-**Budget:** OAK-D Lite ($150) • Astra 2 (€200-250, 1600×1200 depth!) • Gemini 2 (€200-250)
+## Stereolabs ZED Series
 
-### Best Outdoor Performance
-1. **ZED 2i** - Proven at 60kmph in 45°C heat (Reddit verified)
-2. **Intel D455/D455f** - Global shutter, designed for outdoor
-3. **OAK-D Pro** - 48 TOPS AI, wide FOV, proven reliable
+| Model | Depth Resolution | Color Resolution | FPS | Range | FOV | Stereo | Connectivity | Price | Usage | Provider | TD Compatible |
+|-------|-----------------|------------------|-----|-------|-----|--------|--------------|-------|-------|----------|---------------|
+| [ZED X](https://www.stereolabs.com/en-fr/products/zed-x) | 1920x1200 (2.3MP) | 1920x1200 GS or 3840x2160 4K HDR | 15/30/60 | Long range | GS Narrow: H80° V52°, Wide: H110° V80° | Yes (Stereo) | GMSL2 | ~$600-900 | Industrial robotics | Stereolabs | Community support |
+| [ZED X One](https://www.stereolabs.com/en-fr/products/zed-x-one) | 1920x1200 (2.3MP) | 1920x1200 GS @60 or 3840x2160 4K @15 | 15/30/60/120 | Custom baseline | Narrow: H80° V52°, Wide: H110° V80°, Fisheye: H195° V115° | Monocular/Custom | GMSL2/MIPI | €280-€380 | Multi-camera systems | Stereolabs | Community support |
+| [ZED 2](https://www.stereolabs.com/en-fr/products/zed-2) | 2208x1242 (2.7MP) | 4416x2484 (4K) | 15/30/60 | 0.2m - 20m | H110° V70° | Yes (Stereo) | USB 3.0 | ~$400-600 | General robotics | Stereolabs | Community support |
 
-### Best for Robotics/AMR
-**Based on Reddit Community (r/robotics):**
-1. **ZED 2i** - Most robust, works in extreme conditions
-2. **Intel D455** - Reliable, global shutter, good value
-3. **Orbbec Femto Bolt** - Great indoors (avoid strong sunlight)
-4. **OAK-D Pro** - Built-in AI, good for feature-rich environments
+## Microsoft Azure Kinect
 
-### Highest Resolution
-**Depth:**
-1. **ZED 2/2i/X** - 2208×1242 (highest)
-2. **Orbbec Astra 2** - 1600×1200 (best structured light)
-3. **Lucid Helios2** - 1456×1088
-4. **Azure Kinect / Femto Series** - 1024×1024
-
-**RGB:**
-1. **Azure Kinect** - 4K (3840×2160)
-2. **OAK-D Pro** - 12MP (4K)
-3. **ZED 2/2i/X** - 2208×1242
-
-### Best Close-Range
-1. **Orbbec Gemini 305** - **4cm minimum** (revolutionary!)
-2. **Astra Mini Pro** - 35cm minimum
-3. **L515** - 25cm minimum (discontinued)
-
-### Best Industrial
-1. **Intel D457** (€690) - GMSL/FAKRA, IP65, automotive certified
-2. **Zivid Two M130** (€10,000+) - Professional 3D scanning
-3. **OAK-4 Pro** ($949) - RVC4, 52 TOPS, IP67, standalone
-4. **Lucid Helios2** (€1,500-3,000) - High resolution GigE ToF
-
-### Best for Creative/TouchDesigner
-1. **Orbbec Femto Bolt** (€300-400) - Native SDK, point cloud ready
-2. **Intel D455** (€588) - High FPS, excellent SDK
-3. **OAK-D Pro** (€399) - Built-in AI, Python SDK
-4. **ZED 2** (€450) - Spatial AI SDK
+| Model | Depth Resolution | Color Resolution | FPS | Range | FOV | Stereo | Connectivity | Price | Usage | Provider | TD Compatible |
+|-------|-----------------|------------------|-----|-------|-----|--------|--------------|-------|-------|----------|---------------|
+| [Azure Kinect DK](https://azure.microsoft.com/fr-fr/products/kinect-dk) | 1024x1024@15, 640x576@30 | 3840x2160 (12MP) | 15-30 | 0.25-5.46m | WFOV: H120° V120°, NFOV: H75° V65° | No (ToF) | USB 3 | ~$400 (discontinued) | Body tracking, spatial AI | Microsoft | Yes (legacy support) |
 
 ---
 
-## Important Notes from Community (Reddit r/robotics)
+## Key Features Summary
 
-### Recommendations
-- **ZED 2i**: "Most robust and reliable depth camera. Works in 45°C heat at 60kmph"
-- **Intel D455**: "Global shutter makes it best RealSense for outdoor use"
-- **Orbbec Femto Bolt/Mega**: "Much superior to listed options, uses Azure Kinect technology"
-- **OAK-D Pro**: "Great when you need onboard AI processing"
+### Technology Types
+- **Stereo Vision**: Intel RealSense, Orbbec Gemini, Luxonis OAK, Stereolabs ZED
+- **Time of Flight (ToF)**: Orbbec Femto, Azure Kinect
+- **Structured Light**: Orbbec Astra
 
-### Avoid
-- **Femto Bolt/Mega outdoors**: "Becomes quite bad in strong sunlight"
-- **OAK-D in low-texture environments**: "Depth can be temperamental without good features"
+### Connectivity Options
+- **USB-C/USB 3.0**: Most models for plug-and-play
+- **Ethernet PoE**: Industrial models (Gemini 335LE, 435LE, Femto Mega I, OAK-D W PoE)
+- **GMSL2**: Automotive/industrial (D457, Gemini 345LG, ZED X series)
 
----
+### Price Ranges
+- **Budget** ($100-200): Astra Series
+- **Mid-range** ($200-400): Gemini 335, OAK-D W, D-series
+- **Premium** ($400-900): Femto series, ZED X, OAK 4 D
 
-## Connectivity Summary
+### TouchDesigner Compatibility
+- **Native Support**: Intel RealSense, Orbbec (via SDK)
+- **Community Support**: Luxonis OAK, Stereolabs ZED
+- **Legacy Support**: Azure Kinect
 
-### USB 2.0
-- Orbbec Astra series (Astra+, Astra Mini Pro, Astra Embedded S)
-Community Notes (Reddit r/robotics)
-**Recommended:** ZED 2i (60kmph/45°C proven) • D455 (best outdoor) • Femto Bolt/Mega (Azure tech, indoors) • OAK-D Pro (AI onboard)
-**Avoid:** D415 (rolling shutter issues on mobile platforms) • Femto outdoors (bad in sunlight) • OAK-D (needs texture-rich environments)*Orbbec Femto Mega / Mega I**
-- Zivid Two M130
-- Photoneo PhoXi 3D
-- Industrial LiDAR (Ouster, Velodyne, etc.)
-
-### GMSL / GMSL2 (Automotive)
-- **Intel D457** (GMSL/FAKRA)
-- **ZED X** (GMSL2 option)
-
-### GigE (Gigabit Ethernet)
-- Lucid Helios2
-- Photoneo PhoXi 3D
-- Zivid series
-**USB 2.0:** Astra+, Mini Pro, Embedded S
-**USB 3.0/3.1:** RealSense (all), OAK (all USB), Astra 2, Gemini/Femto, ZED, Azure Kinect
-**PoE:** OAK-D Pro PoE • OAK-D W PoE • OAK-4 • Femto Mega/Mega I • Zivid • Photoneo • Industrial LiDAR
-**GMSL/GMSL2:** D457 (GMSL/FAKRA) • ZED X (GMSL2)
-**GigE:** Lucid, Photoneo, Zivid, Industrial cameras
-
-### Gesture / HMI
-**Best:** Orbbec Femto Bolt (€300-400) - Fast ToF  
-**Alternative:** OAK-D Pro ($399) - AI gestures
-
-### Outdoor Mapping / Survey
-**Long range:** Ouster/Velodyne LiDAR (€3,000+)  
-**Medium range:** ZED X (€750) - 120fps  
-**Budget:** D455 (€588)
-
-### Wearable / Drone
-**Ultra-light:** Gemini 305 (65g, €300+)  
-**Compact:** ZED Mini (€350)  
-**AI onboard:** OAK-D Lite ($150)
-
-### Industrial Inspection
-**PoE:** OAK-4 ($849, IP67) or Basler blaze-101 (€1,000)  
-**High precision:** Zivid (€10,000+)  
-**Automotive:** D457 GMSL (€690)
-
-### Creative / Art / TouchDesigner
-**Best SDK:** Femto Bolt (€300-400) - you have integration!  
-**Alternative:** D455 (€588) or OAK-D Pro ($399)  
-**Multi-camera:** ZED 2 (€450) - robust
+### Best Use Cases
+- **AMR/Robotics**: Gemini 335/335LE, OAK-D W, ZED X
+- **Outdoor/Industrial**: Gemini 345LG, 435LE, Femto Mega I, D457
+- **Body Tracking**: Azure Kinect, Femto Bolt
+- **Wide FOV**: OAK-D W (150°), Femto WFOV (120°)
+- **Long Range**: Gemini 435LE (up to 20m), ZED X
+- **Short Range/Scanning**: Gemini 215 (0.15-0.7m)
 
 ---
 
-## What's in Your Workspace
-
-Based on your `CKTDOrbbec` project:
-- You have Orbbec SDK v2.6.3 installed
-- You have `pyorbbecsdk` integration for TouchDesigner
-- Your integrGuide
-**AMR/AGV:** ZED 2i/D455 (€550-588) • Budget: OAK-D Lite ($150)/Gemini 2 (€200) • Industrial: OAK-4 ($849)
-**Outdoor:** ZED 2i (€550) • D455 (€588) • Avoid: Femto (sunlight issues)
-**Indoor Robotics:** Femto Bolt (€300-400) • OAK-D Pro ($399) • Astra 2 (€200, 1600×1200!)
-**Robotic Arms:** Gemini 305 (€300+, 4cm!) • Zivid (€10k+, precision)
-**3D Scanning:** Zivid (€10k+) • L515 (€450+) • D455 (€588)
-**Gesture/HMI:** Femto Bolt (€300-400) • OAK-D Pro ($399)
-**Outdoor Mapping:** Ouster/Velodyne (€3k+) • ZED X (€750, 120fps) • D455 (€588)
-**Wearable/Drone:** Gemini 305 (65g) • ZED Mini (€350) • OAK-D Lite ($150)
-**Industrial:** D457 GMSL (€690) • OAK-4 (IP67, $849) • Lucid Helios2 (€1.5k-3k) • Zivid (€10k+)
-**TouchDesigner:** Femto Bolt (€300-400, SDK ready!) • D455 (€588) • OAK-D Pro ($399) • ZED 2 (€450)
-
-## Quick Decision Matrix
-
-**Budget < €200:**
-→ OAK-D Lite ($150) or Astra 2 (€200)
-
-**Need PoE:**
-→ OAK-D Pro PoE ($499) or OAK-D W PoE ($549) or Femto Mega (€350-450)
-
-**Need highest FPS:**
-→ ZED X (120fps, €750)
-
-**Need outdoor robustness:**
-→ ZED 2i (€550) or D455 (€588)
-
-**Need close range (<10cm):**
-→ Gemini 305 (4cm, €300+)
-
-**Need highest depth resolution:**
-→ ZED series (2208×1242)
-
-**Need highest RGB resolution:**
-→ Azure Kinect (4K) or OAK-D Pro (12MP)
-
-**Need onboard AI:**
-→ OAK-D Pro ($399) or OAK-4 ($599+)
-
-**Already have TouchDesigner setup:**
-→ Orbbec Femto Bolt (€300-400)
-
-**Need industrial/IP65:**
-→ D457 GMSL (€690) or OAK-4 (IP67, $849)
-
----
-
-## Your Setup (CKTDOrbbec)
-Orbbec SDK v2.6.3 • pyorbbecsdk for TouchDesigner • Supports: Femto/Gemini/Astra
-**Recommended:** Femto Bolt (€300-400, SDK ready!) • Femto Mega (€350-450, PoE) • D455 (€588, RealSense SDK)
-
-## Where to Buy
-**Europe:** Generation Robots (RealSense) • Orbbec Official • Luxonis Shop
-**Online:** Amazon (verify seller) • Alibaba (bulk) • Official storesntel RealSense L515 discontinued in 2023
-- Azure Kinect DK discontinued in 2023 (replaced by Orbbec Femto)
-- Always verify latest specs on manufacturer websites before purchase
-Support
-**RealSense 2.0:** Python/C++/C#/Node.js • Win/Linux/macOS • ROS/ROS2 • Unity/Unreal
-**Orbbec 2.6.3:** Python/C++/C • Win/Linux • ROS/ROS2 • TouchDesigner (your integration!)
-**Luxonis DepthAI:** Python/C++ • Win/Linux/macOS/ARM • ROS/ROS2 • PyTorch/TensorFlow/ONNX • Onboard inference
-**ZED SDK:** Python/C++/C#/Unity • Win/Linux • ROS/ROS2 • Unity/Unreal • Spatial AI/Neural depth
-**<€200:** OAK-D Lite ($150) • Astra 2 (€200, 1600×1200 depth!)
-**PoE:** OAK-D Pro PoE ($499) • D555 PoE (€720)
-**Max FPS:** ZED X (120fps, €750)
-**Outdoor:** ZED 2i (€550) • D455 (€588)
-**Close <10cm:** Gemini 305 (4cm, €300+)
-**Max Depth Res:** ZED (2208×1242)
-**Max RGB Res:** Azure Kinect (4K) • OAK-D Pro (12MP)
-**Onboard AI:** OAK-D Pro ($399) • OAK-4 ($599+)
-**TouchDesigner ready:** Femto Bolt (€300-400) ✅
-**Industrial/IP65:** D555 PoE (€720) • D457 (€690)Support
-**Tech:** Intel ([intel.com/realsense](https://www.intel.com/realsense)) • Orbbec (business@orbbec.com) • Luxonis (support@luxonis.com, [forum](https://discuss.luxonis.com/)) • Stereolabs (support@stereolabs.com)
-**Community:** Reddit (r/robotics, r/computervision) • ROS Discourse ([discourse.ros.org](https://discourse.ros.org)) • GitHub (official repos)
-
----
-**Document:** CraftKontrol - Arnaud Cassone © Artcraft Visuals | **Verified:** Jan 17, 2026
-**Notes:** Prices approximate • Specs from official sources • Reddit feedback 2024-2026 • L515 discontinued 2023 • Azure Kinect discontinued 2023 (replaced by Orbbec Femto) • Always verify latest specs on manufacturer websites
+*Last updated: January 2026*
+*Prices are approximate and may vary by region and distributor*
