@@ -1,8 +1,41 @@
 # Depth Camera Comparison 2026
-**Updated:** Jan 17, 2026 | **Author:** Arnaud Cassone © Artcraft Visuals
+**Updated:** Jan 19, 2026 | **Author:** Arnaud Cassone © Artcraft Visuals
 
 
 Comprehensive comparison of depth cameras for robotics and computer vision applications.
+
+
+## Tested :
+- Azure Kinect usb / standard quality depth, cleaner point cloud
+- Orbbec astra2 usb / high quality depth, noisy point cloud
+- OAK-D pro W usb / no clean point cloud
+- OAK-D s2 usb / no clean point cloud
+
+
+## To try :
+
+- [ZED 2i usb](https://www.stereolabs.com/en-fr/store/products/zed-2i)
+- [OAK-D 4 D POE](https://shop.luxonis.com/products/oak-4-d?variant=46428694446303)
+- [Gemini 335LE ethernet POE](https://www.orbbec.com/gemini-335le/)
+- Femto Mega I ethernet POE
+- [Switch 4 port POE](https://www.amazon.fr/TP-Link-sg1005p-Ports-Gigabit-Desktop/dp/B0DP5XYMJM/?th=1)
+
+
+## High End :
+
+- [ZED X GMSL2](https://www.stereolabs.com/en-fr/products/zed-x)
+- [GMSL2 Capture Card](https://www.neousys-tech.com/en/product/feature/gmsl-camera/pcie-npl54)
+
+## Specifics :
+
+- usb3 : Cable length max 3m (active ext possible) but latency/jitter/crash may increase
+- ethernet poe : Cable length max 100m (standard) with poe switch/injector / Latency increase by distance
+- gmsl2 : Optical Cable length max 15m (extension possible) low latency, Costy Capture card needed 
+
+
+
+
+
 
 ## Complete Comparison - All Cameras
 *Sorted by: Depth Resolution → Connectivity (Ethernet first) → Price*
