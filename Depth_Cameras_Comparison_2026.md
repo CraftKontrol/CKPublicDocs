@@ -17,7 +17,7 @@ Comprehensive comparison of depth cameras for robotics and computer vision appli
 - [ZED 2i usb](https://www.stereolabs.com/en-fr/store/products/zed-2i)
 - [OAK-D 4 D POE](https://shop.luxonis.com/products/oak-4-d?variant=46428694446303)
 - [Gemini 335LE ethernet POE](https://www.orbbec.com/gemini-335le/)
-- Femto Mega I ethernet POE
+- [Femto Mega ethernet POE](https://www.orbbec.com/products/tof-camera/femto-mega/)
 - [Switch 4 port POE](https://www.amazon.fr/TP-Link-sg1005p-Ports-Gigabit-Desktop/dp/B0DP5XYMJM/?th=1)
 
 
