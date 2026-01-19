@@ -18,6 +18,7 @@ Comprehensive comparison of depth cameras for robotics and computer vision appli
 - [OAK-D 4 D POE](https://shop.luxonis.com/products/oak-4-d?variant=46428694446303)
 - [Gemini 335LE ethernet POE](https://www.orbbec.com/gemini-335le/)
 - [Femto Mega ethernet POE](https://www.orbbec.com/products/tof-camera/femto-mega/)
+#### Required
 - [Switch 4 port POE](https://www.amazon.fr/TP-Link-sg1005p-Ports-Gigabit-Desktop/dp/B0DP5XYMJM/?th=1)
 
 
@@ -25,6 +26,7 @@ Comprehensive comparison of depth cameras for robotics and computer vision appli
 
 - [ZED X GMSL2](https://www.stereolabs.com/en-fr/products/zed-x)
 - [Intel D457 GMSL2](https://www.intel.fr/content/www/fr/fr/products/sku/230571/intel-realsense-depth-camera-d457/specifications.html)
+#### Required
 - [GMSL2 Capture Card](https://www.neousys-tech.com/en/product/feature/gmsl-camera/pcie-npl54)
 
 ## Specifics :
