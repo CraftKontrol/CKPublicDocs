@@ -24,6 +24,7 @@ Comprehensive comparison of depth cameras for robotics and computer vision appli
 ## High End :
 
 - [ZED X GMSL2](https://www.stereolabs.com/en-fr/products/zed-x)
+- [Intel D457 GMSL2](https://www.intel.fr/content/www/fr/fr/products/sku/230571/intel-realsense-depth-camera-d457/specifications.html)
 - [GMSL2 Capture Card](https://www.neousys-tech.com/en/product/feature/gmsl-camera/pcie-npl54)
 
 ## Specifics :
